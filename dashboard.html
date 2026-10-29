@@ -36,6 +36,47 @@
 .n-gate{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px;border:1px solid #bed4f0;background:#f4f8fe;border-radius:10px;margin:16px 0}.n-gate p{margin:0;font-size:12px}.n-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.n-grid label{display:block;font-size:12px;margin:0 0 6px}.n-grid .full{grid-column:1/-1}.n-food{padding:16px 0;border-bottom:1px solid var(--line)}.n-food:last-child{border-bottom:0}.n-food-head{display:grid;grid-template-columns:minmax(160px,2fr) minmax(75px,1fr) 90px minmax(90px,1fr) auto;gap:10px;align-items:end}.n-food label{font-size:11px;display:block;margin-bottom:5px}.n-food input,.n-food select{width:100%;min-width:0}.n-food-head>div{min-width:0}.n-food details{margin-top:10px}.n-food summary{font-size:12px;color:#2e5aa7;cursor:pointer}.n-food .n-grid{margin-top:12px;grid-template-columns:repeat(4,minmax(0,1fr))}.n-food .n-source{font-size:11px;margin:8px 0;color:#5a6980;overflow-wrap:anywhere}.n-totals{display:flex;flex-wrap:wrap;gap:12px;padding:12px 0;font-size:12px}.n-totals strong{font-weight:600;color:#1c2f50}.n-plan-slot{padding:20px 0;border-top:1px solid var(--line)}.n-plan-slot:first-child{border-top:0}.n-plan-slot-header{display:grid;grid-template-columns:125px minmax(130px,1fr) auto;gap:12px;align-items:end}.n-plan-slot-header label{display:block;font-size:12px;margin-bottom:6px}.n-progress-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:14px 0}.n-progress{padding:12px 0}.n-progress strong{font-size:22px;display:block;margin:6px 0}.n-progress span,.n-progress small{display:block;color:#5a6980;font-size:11px}.n-progress progress{width:100%;height:6px;accent-color:#2e5aa7}.n-reference{background:#f5f8fc;padding:14px;margin:14px 0;border-radius:8px;font-size:12px}.n-reference ul{padding-left:18px}.n-checkboxes{display:grid;grid-template-columns:1fr 1fr;gap:10px}.n-checkboxes label,.n-check{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.6}.n-checkboxes input,.n-check input{width:18px;height:18px;flex:none}.n-workout-row{padding:16px 0;border-bottom:1px solid var(--line)}.n-workout-row textarea{min-height:110px}.n-status{font-size:12px;color:#2e5aa7;white-space:pre-wrap;margin:10px 0}.n-food-list{margin:8px 0;padding-left:18px;font-size:12px}.n-legacy{border:1px dashed #c5d4e9;padding:12px;margin:12px 0}.journal-actions button{white-space:nowrap}.n-inline-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.n-inline-actions button{white-space:nowrap}#n-profile-form fieldset,#n-workout-form fieldset,#j-plan-fields{min-width:0;border:0;padding:0;margin:0}#n-api-preview{white-space:pre-wrap;background:#f5f8fc;padding:14px}.n-subtitle{font-size:12px;color:#5a6980}#n-nutrition-summary{margin:18px 0}.n-food textarea{min-height:50px}
 @media(max-width:720px){.n-grid{grid-template-columns:1fr 1fr}.n-gate{align-items:flex-start;flex-direction:column}.n-food-head{grid-template-columns:1fr 1fr}.n-food-head>div:first-child{grid-column:1/-1}.n-food-head>button{grid-column:2}.n-food .n-grid{grid-template-columns:1fr 1fr}.n-plan-slot-header{grid-template-columns:110px minmax(0,1fr)}.n-plan-slot-header>button{grid-column:2;justify-self:end}.n-progress-grid{grid-template-columns:1fr 1fr}.n-checkboxes{grid-template-columns:1fr}.n-inline-actions button{font-size:12px;padding:10px}.n-reference{padding:12px}.n-workout-row .n-grid{grid-template-columns:1fr 1fr}}
 
+.d-check,.d-timeline{margin:24px 0 28px;padding:0;border:0;min-width:0}
+.d-section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+.d-section-head h2{font-size:17px;margin:0}.d-section-head>span{font-size:11px;color:var(--muted)}
+.d-save-state{font-size:12px;color:var(--muted);margin:10px 0}.d-save-state[data-state=draft]{color:#80601d}
+.d-check-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.d-check-list li{display:grid;grid-template-columns:92px minmax(0,1fr) 66px auto;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0;font-size:12px}
+.d-check-label{font-weight:600}.d-check-list strong{display:block;font-size:12px;font-weight:400}.d-check-list small{display:block;color:var(--muted);font-size:11px;margin-top:3px;line-height:1.6}
+.d-check-list small.d-draft{color:#80601d}.d-check-state{font-size:11px;color:var(--muted);text-align:right}.d-check-list li[data-state=recorded] .d-check-state{color:#2E5AA7}
+.d-check-list li[data-state=partial] .d-check-state,.d-check-list li[data-state=conflict] .d-check-state{color:#80601d}
+.d-check-list button,.d-event>button{min-height:38px;font-size:11px;padding:6px 10px}
+.d-explanation{font-size:11px;line-height:1.7;color:var(--muted);margin:10px 0}.d-events{list-style:none;margin:18px 0 0;padding:0}
+.d-event{display:grid;grid-template-columns:84px minmax(0,1fr) auto;gap:18px;align-items:start;position:relative;padding:0 0 22px}
+.d-event::before{content:'';position:absolute;left:94px;top:8px;bottom:-6px;width:1px;background:var(--line)}.d-event:last-child::before{bottom:22px}
+.d-event-body{position:relative;padding-left:10px;min-width:0}.d-event-body::before{content:'';position:absolute;left:-12px;top:6px;width:9px;height:9px;border-radius:50%;background:#2E5AA7;border:2px solid #fff}
+.d-event-symptom .d-event-body::before{background:#FFA62B}.d-event-time{font-size:12px;line-height:1.7;padding-top:1px}.d-event-time small{display:block;font-size:10px;color:var(--muted)}
+.d-event-kind{font-size:10px;color:var(--muted)}.d-event h3{font-size:13px;line-height:1.5;margin:3px 0 5px;font-weight:600}.d-event p{font-size:12px;line-height:1.7;color:var(--muted);margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.d-event p.d-relation{font-size:11px;color:#66521d;margin-top:7px;padding-left:9px;border-left:2px solid #F8E6A0}.d-event-context{opacity:.85}.d-untimed{border-top:1px dashed var(--line);padding-top:15px}.d-untimed>h3{font-size:13px;margin:0}.d-untimed .d-event::before{display:none}.d-untimed .d-event-body::before{background:#fff;border-color:#a6b3c5}
+.d-empty{font-size:12px;color:var(--muted);margin:16px 0}.d-check[hidden],.d-timeline[hidden]{display:none}
+@media(max-width:720px){.d-section-head{align-items:flex-start;flex-direction:column;gap:5px}.d-check-list li{grid-template-columns:78px minmax(0,1fr) auto;gap:8px;padding:12px 0}.d-check-state{display:none}.d-check-list button,.d-event>button{min-height:42px}.d-event{grid-template-columns:60px minmax(0,1fr) auto;gap:10px}.d-event::before{left:65px}.d-event-body{padding-left:9px}.d-event-body::before{left:-9px}.d-event-time{font-size:11px}.d-event h3{font-size:13px}.d-check,.d-timeline{margin:20px 0 25px}}
+
+.v-visit-section{margin:0 0 24px;border-block:1px solid var(--line);padding:0}.v-visit-section>details>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;font-size:16px;font-weight:600;cursor:pointer;list-style:none}.v-visit-section>details>summary::after{content:'+';font-size:22px;font-weight:400}.v-visit-section>details[open]>summary::after{content:'−'}.v-visit-section>details>summary small{font-size:12px;font-weight:400;color:var(--muted);margin-left:auto}.v-visit-section fieldset{border:0;padding:0;margin:0;min-width:0}.v-range-grid{display:grid;grid-template-columns:minmax(190px,1.2fr) repeat(2,minmax(140px,1fr));gap:16px;max-width:800px}.v-range-grid>div{min-width:0}.v-range-grid label{display:block;font-size:12px;margin:0 0 7px}.v-actions{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 10px}.v-note{color:var(--muted);font-size:12px;line-height:1.7}.v-access:empty{display:none}.v-access{display:flex;align-items:center;gap:16px;justify-content:space-between;margin:0 0 18px;padding:14px 0}.v-access p{font-size:12px;margin:0}.v-preview-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px;padding:14px 0;border-block:1px solid var(--line)}.v-preview-tools p{margin:0;font-size:12px}.v-document{max-width:960px;padding:24px 0 16px}.v-document-head{padding-bottom:20px}.v-kicker{font-size:11px;letter-spacing:.08em;color:#2e5aa7;margin:0 0 10px!important}.v-document-head h2{font-size:24px;font-weight:600;line-height:1.5;margin:0 0 8px}.v-document p{font-size:13px;line-height:1.8;margin:8px 0;white-space:pre-wrap;overflow-wrap:anywhere}.v-document section{padding:20px 0;border-top:1px solid var(--line)}.v-document h3{font-size:16px;margin:0 0 14px}.v-document h4{font-size:13px;margin:14px 0 6px}.v-document li{font-size:13px;margin:12px 0;white-space:pre-wrap;overflow-wrap:anywhere}.v-document li small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.v-document table{min-width:470px}.v-document th,.v-document td{font-size:12px;white-space:normal;overflow-wrap:anywhere}.v-document .v-note{font-size:11px;color:var(--muted)}.v-attention{border-left:3px solid #FFA62B;background:#fff9e6;padding:10px 14px}.v-day-note{margin:16px 0}.v-preview-tools[hidden],.v-document[hidden],.v-range-grid>div[hidden]{display:none!important}.v-visit-section button:focus-visible,.v-visit-section summary:focus-visible,.v-document:focus-visible{outline:2px solid #2e5aa7;outline-offset:3px}
+@media(max-width:720px){.v-visit-section>details>summary{flex-wrap:wrap;gap:8px;padding:16px 0}.v-visit-section>details>summary small{order:3;flex-basis:100%;margin-left:0}.v-visit-section>details>summary::after{margin-left:auto}.v-range-grid{grid-template-columns:1fr 1fr;gap:12px}.v-range-grid>div:first-child{grid-column:1/-1}.v-preview-tools,.v-access{align-items:flex-start;flex-direction:column;gap:10px}.v-document-head h2{font-size:20px}.v-actions{gap:8px}.v-actions button{flex:1;min-width:130px}.v-document{padding-top:20px}.v-document section{padding:18px 0}}
+
+.v-document th small{display:block;color:var(--muted);font-size:10px;font-weight:400;margin-top:4px}.v-symptom-details{margin-top:18px}.v-symptom-details>summary{font-size:13px;font-weight:600;cursor:pointer;padding:10px 0}.v-symptom-row{padding:12px 0;border-bottom:1px solid var(--line)}.v-symptom-row h4{margin-top:0}
+
+/* Use document sections, ledgers and compact controls rather than equal-height cards. */
+.r-layout{--radius:6px;--ink:#24354c;--muted:#5a6b80;--line:#dde5ee;color:var(--ink)}
+.r-layout main{max-width:1360px}.r-layout .card{border:0;border-radius:0;padding:24px 0;background:transparent;align-self:start}.r-layout .card+.card{margin-top:0}.r-layout .grid-two,.r-layout .grid-main,.r-layout .lower-grid{align-items:start}
+.r-layout h2{font-size:17px}.r-layout label{color:#40526a}.r-layout input,.r-layout select,.r-layout textarea{border-color:#aebed1;border-radius:5px;font-size:13px;padding:9px 10px}.r-layout textarea{min-height:76px}.r-layout button{border-color:#c4d1df;border-radius:5px}.r-layout button.primary{border-color:#2e5aa7}.r-layout :focus-visible{outline-color:#2e5aa7}.r-layout .text-button{border:0}
+.r-layout .nav button{border-color:transparent}.r-layout .mode button{border-color:transparent}.r-layout .mode button[aria-pressed=true]{border-color:#d3e0f2}.r-layout #goals-form button[type=submit]{margin-top:16px}.r-layout #j-day-stats{display:none}.r-layout .r-check-fold{padding:0;border:0}.r-layout .r-check-fold>summary{list-style:none;min-height:44px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}.r-layout .r-check-fold>summary::before{content:'›';font-size:23px;color:#2e5aa7}.r-layout .r-check-fold[open]>summary::before{transform:rotate(90deg)}.r-layout .r-check-fold .d-section-head{flex:1;margin:0}.r-layout .r-check-fold .d-section-head h2{font-size:15px}.r-layout .d-check{margin:12px 0 8px}.r-layout .d-save-state{margin:8px 0 0}.r-layout .r-diary-jumps{display:flex;gap:20px;flex-wrap:wrap;margin-top:2px}.r-layout .r-diary-jumps button{font-size:12px}.r-layout .r-list-toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}.r-layout .r-list-toolbar p{margin:0 auto 0 0;font-size:12px;color:var(--muted)}.r-layout .r-detail-actions{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}.r-layout .r-delete-actions,.r-layout .r-review-delete{display:flex;gap:12px;align-items:center;margin:16px 0;font-size:12px;color:var(--muted)}.r-layout #r-measurements-list{scroll-margin-top:16px}
+.r-layout .kpis{border:0;border-radius:0;border-block:1px solid var(--line)}.r-layout .kpi{padding:18px 16px}.r-layout .kpi:first-child{padding-left:0}.r-layout .journal-stats{border-radius:0;border-inline:0}.r-layout .journal-stat{padding:12px 16px}.r-layout .journal-stat strong{font-size:22px;margin:3px 0}.r-layout .journal-access,.r-layout .n-gate{border:0;border-left:3px solid #86c5ff;border-radius:0;padding:10px 14px}.r-layout .journal-access strong,.r-layout .n-gate strong{font-size:12px}.r-layout .n-gate br{display:none}.r-layout .n-gate strong{margin-right:8px}
+.r-layout .r-chart-section{border-bottom:1px solid var(--line);padding-top:4px}.r-layout #body-chart{min-height:0;max-width:100%;max-height:380px}.r-layout #body-chart svg{max-height:380px}.r-layout .r-comparisons{display:grid;grid-template-columns:1fr 1fr;gap:32px;border-bottom:1px solid var(--line)}.r-layout .r-comparisons>.card{padding:22px 0}.r-layout .r-ledger{padding-top:26px}.r-layout .surgery-chip{padding:7px 10px;border-radius:3px;margin-top:12px}.r-layout .previous-grid strong{font-size:24px}.r-layout .table-wrap{border:0;border-radius:0}.r-layout th{font-size:11px}.r-layout td{font-size:12px}.r-layout .recent-records .card-head{margin-bottom:8px}.r-layout .quality-summary{margin-top:8px}
+.r-layout .r-local-nav{display:flex;gap:24px;overflow-x:auto;border-bottom:1px solid var(--line);margin:18px 0 0}.r-layout .r-local-nav button{border:0;background:transparent;border-bottom:3px solid transparent;border-radius:0;white-space:nowrap;padding:10px 0;color:var(--muted);min-height:46px}.r-layout .r-local-nav button[aria-pressed=true]{color:#234b89;border-bottom-color:#ffa62b}.r-layout #panel-plan>.section-intro{margin:12px 0;font-size:12px}.r-layout .r-plan-view{max-width:100%}.r-layout #r-plan-goals{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:36px}.r-layout #r-plan-goals>.card+article{border-left:1px solid var(--line);padding-left:28px}.r-layout #r-plan-goals .form-grid{gap:14px 12px}.r-layout .r-plan-view>article{margin:0!important}.r-layout #r-plan-guide{max-width:920px}.r-layout #r-plan-guide>article+article{border-top:1px solid var(--line)}
+.r-layout .n-plan-slot,.r-layout .n-workout-row{padding:0;border:0}.r-layout .r-plan-fold{padding:0;border-bottom:1px solid var(--line)}.r-layout .r-plan-fold>summary{display:flex;gap:16px;align-items:center;min-height:64px;padding:12px 6px;font-size:14px;list-style:none}.r-layout .r-plan-fold>summary::before{content:'›';font-size:22px;line-height:1;color:#2e5aa7;width:12px;flex:none}.r-layout .r-plan-fold[open]>summary::before{transform:rotate(90deg)}.r-layout .r-plan-fold[open]>summary{background:#f4f8fe}.r-layout .r-plan-time{width:90px;flex:none;font-size:12px;color:#526983;font-variant-numeric:tabular-nums}.r-layout .r-edit-label{margin-left:auto;font-weight:400;font-size:11px;color:#526983}.r-layout .r-plan-fold-body{padding:16px 6px 22px}.r-layout .n-plan-slot-header{grid-template-columns:120px minmax(160px,1fr) auto}.r-layout .n-workout-row textarea{min-height:90px}.r-layout .n-workout-row .n-grid{grid-template-columns:120px 1fr 1fr}.r-layout .n-food{padding:12px 0}.r-layout .n-food details{padding:6px 0}.r-layout .n-source{margin:5px 0}.r-layout .n-reference{border-radius:0;border-left:3px solid #86c5ff;padding:12px}.r-layout .n-grid{gap:12px}.r-layout #n-nutrition-summary{grid-column:1/-1;padding:8px 0 14px;margin:0;border-bottom:1px solid var(--line)}.r-layout .n-progress-grid{margin:0}.r-layout .n-progress{padding:10px 0}.r-layout .n-progress strong{font-size:22px}.r-layout .n-totals{padding:6px 0}.r-layout .journal-footnote{margin:8px 0}.r-layout .journal-empty{padding:10px 0}.r-layout .empty{padding:24px 12px;border:0;background:#f5f8fc;border-radius:0}
+.r-layout #j-pane-food{display:grid;grid-template-columns:minmax(0,2fr) minmax(235px,1fr);column-gap:32px;align-items:start}.r-layout .r-water-section{border-left:1px solid var(--line);padding-left:22px}.r-layout #j-water-form .journal-form{grid-template-columns:1fr 1fr}.r-layout #j-water-form .journal-form>div:nth-of-type(4){grid-column:1/-1}.r-layout #j-meal-form .journal-form{grid-template-columns:150px minmax(0,1fr)}.r-layout #j-meal-form .half{grid-column:auto}.r-layout #j-meal-form .r-optional{grid-row:2}.r-layout .r-optional{border:0;padding:0}.r-layout .r-optional>summary{font-size:12px;color:#2e5aa7;min-height:36px}.r-layout .r-optional>div{padding:8px 0}.r-layout .r-optional label{margin-top:0}.r-layout .journal-list{margin-top:16px}.r-layout .journal-entry{padding:12px 0}.r-layout .journal-entry .entry-buttons button{min-height:40px}.r-layout .journal-tabs{gap:20px;padding-bottom:0;margin-top:20px}.r-layout .journal-tabs button{border:0;border-radius:0;background:transparent;padding:10px 0;border-bottom:3px solid transparent}.r-layout .journal-tabs button[aria-pressed=true]{background:transparent;border-color:#ffa62b}.r-layout #j-pane-health>article+article,.r-layout #j-pane-activity>article+article{border-top:1px solid var(--line)}.r-layout .r-review-group{margin:0;padding:12px 0;border-top:1px solid var(--line)}.r-layout .r-review-group h3{margin:0 0 12px;font-size:13px}.r-layout .r-review-group .journal-form{gap:12px}.r-layout .r-review-group>summary{margin-bottom:10px}.r-layout .r-review-group .journal-form .full:has(textarea){grid-column:span 2}.r-layout #j-review-form textarea{min-height:76px}.r-layout .error:empty{min-height:0;margin:0}.r-layout .n-status:empty{margin:0}.r-layout .r-record-tools{border-top:1px solid var(--line);margin-top:20px}.r-layout .r-record-tools>summary{font-size:15px;color:#2e5aa7;padding:8px 0}.r-layout .r-record-inputs{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(230px,1fr);gap:32px;align-items:start}.r-layout .csv-intake{border:0;border-left:3px solid #86c5ff;border-radius:0;margin:24px 0;padding:14px;background:#f5f8fc}.r-layout .r-record-inputs .form-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.r-layout #r-measurements-list{padding-top:4px}.r-layout #panel-privacy>.grid-two{gap:36px}.r-layout #panel-privacy>.card{border-top:1px solid var(--line)}.r-layout #medical-context .form-grid{grid-template-columns:1fr 1fr}.r-layout #panel-calendar>.card{padding-top:10px}.r-layout .calendar-day{border-radius:2px;min-height:85px}.r-layout .journal-summary-grid .card{padding:16px 0}.r-layout .journal-summary-grid{gap:32px;border-block:1px solid var(--line)}
+.r-layout #j-pane-food{grid-template-areas:'food nutrition' 'food water';row-gap:0}.r-layout .r-food-section{grid-area:food}.r-layout #n-nutrition-summary{grid-area:nutrition;padding:24px 0 20px 22px;border-left:1px solid var(--line);border-bottom:0}.r-layout #n-nutrition-summary .n-progress-grid{grid-template-columns:1fr 1fr}.r-layout #n-nutrition-summary .n-totals{font-size:11px}.r-layout .r-water-section{grid-area:water;border-top:1px solid var(--line)}
+.r-layout .n-plan-slot-header{grid-template-columns:145px minmax(180px,420px) auto;justify-content:start}.r-layout .n-plan-slot .n-food-head{max-width:940px}.r-layout .n-plan-slot .n-food .n-grid{max-width:940px}
+@media(max-width:1100px){.r-layout #j-pane-food{grid-template-columns:minmax(0,1.7fr) minmax(225px,1fr);gap:0 24px}.r-layout .n-food-head{grid-template-columns:2fr 1fr 90px}.r-layout .n-food-head>div:first-child{grid-column:1/-1}.r-layout .n-food-head>button{grid-column:3}.r-layout #r-plan-goals{grid-template-columns:1fr}.r-layout #r-plan-goals>.card+article{border-left:0;padding-left:0;border-top:1px solid var(--line)}}
+@media(max-width:800px){.r-layout #j-pane-food{grid-template-columns:1fr;grid-template-areas:'food' 'nutrition' 'water'}.r-layout #n-nutrition-summary{padding:18px 0;border-left:0;border-top:1px solid var(--line)}.r-layout #n-nutrition-summary .n-progress-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.r-layout .r-water-section{border-left:0;padding-left:0;border-top:1px solid var(--line)}.r-layout .r-record-inputs{grid-template-columns:1fr;gap:0}.r-layout .r-comparisons{gap:24px}.r-layout .r-record-inputs .form-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.r-layout .card{padding:18px 0}.r-layout .r-comparisons{grid-template-columns:1fr;gap:0}.r-layout .r-comparisons>.card+article{border-top:1px solid var(--line)}.r-layout .r-local-nav{gap:22px}.r-layout .r-local-nav button{font-size:12px}.r-layout #r-plan-goals{gap:8px}.r-layout .r-plan-fold>summary{gap:10px;min-height:62px}.r-layout .r-plan-time{width:68px}.r-layout .r-edit-label{font-size:10px;white-space:nowrap}.r-layout .n-plan-slot-header{grid-template-columns:145px minmax(0,1fr)}.r-layout .n-workout-row .n-grid{grid-template-columns:95px minmax(0,1fr)}.r-layout .n-workout-row .n-grid>div:nth-child(3){grid-column:1/-1}.r-layout .n-food-head{grid-template-columns:1fr 1fr}.r-layout .n-food-head>button{grid-column:2}.r-layout .r-review-group .journal-form .full:has(textarea){grid-column:1/-1}.r-layout .r-plan-fold-body{padding:14px 0}.r-layout .journal-stats .journal-stat{padding:10px}.r-layout .journal-access,.r-layout .n-gate{padding:10px 12px}.r-layout #j-meal-form .journal-form{grid-template-columns:145px minmax(0,1fr)}.r-layout #medical-context .form-grid{grid-template-columns:1fr}.r-layout .journal-tabs{gap:18px}.r-layout .journal-tabs button{padding:10px 0;font-size:12px}.r-layout .r-plan-fold summary strong{overflow-wrap:anywhere}.r-layout .calendar-day{min-height:72px}.r-layout .kpi:first-child{padding-left:12px}.r-layout .kpi{padding:14px 12px}}
+
 </style>
 </head>
 <body>
@@ -190,7 +231,7 @@ function renderOverview(){
  $('intake-summary').innerHTML=baseline&&last?`<table class="comparison-table"><thead><tr><th>지표</th><th>수술 전</th><th>최근</th></tr></thead><tbody>${configs.map(([label,key,unit])=>`<tr><td>${label} <small>(${unit})</small></td><td>${format(measurementValue(baseline,key))} <small>${unit}</small></td><td><strong>${format(measurementValue(last,key))}</strong> <small>${unit}</small></td></tr>`).join('')}</tbody></table><p class="chart-note">서로 다른 장비의 측정이 포함될 수 있어요. 변화량만으로 수술·식단·약물의 효과를 판정하지 않아요.</p><div class="surgery-chip"><span>위전절제술</span><strong>${SURGERY_DATE.replaceAll('-','.')}</strong></div>`:empty('비교할 수술 전후 기록이 필요해요.');
  const prior=last?rows.filter(r=>compareMeasurements(r,last)<0).at(-1):null;
  $('training-chart').innerHTML=last&&prior?`<p class="small-text muted">${prior.date} ${prior.time.slice(0,5)} → ${last.date} ${last.time.slice(0,5)}</p><div class="previous-grid">${configs.map(([label,key,unit])=>{const a=measurementValue(prior,key),b=measurementValue(last,key);return `<div><span>${label}</span><strong>${a!==null&&b!==null?signed(b-a):'—'}<small>${key==='pbf'?'%p':unit}</small></strong></div>`;}).join('')}</div><p class="chart-note">직전 측정과의 차이예요. BIA 수치는 측정 조건의 영향을 받아요.</p>`:empty('비교할 이전 기록이 없어요.');
- $('recent-records').innerHTML=rows.length?measurementTable([...rows].reverse().slice(0,5),false):empty('기간·장비 필터를 바꿔보세요.');
+ $('recent-records').innerHTML=rows.length?measurementTable([...rows].reverse().slice(0,5),mode==='private'):empty('기간·장비 필터를 바꿔보세요.');
  const devices=[...new Set(all.map(r=>r.device))].sort();const chosen=$('device-filter').value||deviceFilter;$('device-filter').innerHTML='<option value="all">모든 장비</option>'+devices.map(d=>`<option value="${escapeHTML(d)}">${escapeHTML(d)}</option>`).join('');$('device-filter').value=devices.includes(chosen)?chosen:'all';
  const grouped=new Map();for(const r of all)grouped.set(r.date,(grouped.get(r.date)||0)+1);
  $('quality-summary').innerHTML=`<span>전체 ${all.length}회</span><span>장비 ${devices.map(d=>`${escapeHTML(d)} ${all.filter(r=>r.device===d).length}회`).join(' / ')}</span><span>같은 날 여러 측정 ${[...grouped.values()].filter(n=>n>1).length}일</span>`;
@@ -351,7 +392,7 @@ if(typeof module!=='undefined'&&module.exports)module.exports={civilDateValid,re
 
 function selectedMeasurements(){const rows=recent(state().measurements,'all').sort(compareMeasurements),before=rows.filter(r=>r.date<SURGERY_DATE).at(-1);return rows.filter(r=>(range==='all'||range==='surgery'&&r.date>=(before?.date||SURGERY_DATE)||range!=='surgery'&&dayNum(r.date)>=dayNum(asOf())-Number(range)+1)&&(deviceFilter==='all'||r.device===deviceFilter));}
 function baselineRecord(){return recent(state().measurements,'all').filter(r=>r.date<SURGERY_DATE).sort(compareMeasurements).at(-1);}
-function measurementTable(rows,manage=true){return `<div class="table-wrap"><table><caption class="skip">측정 기록. 시간과 장비별로 구분합니다.</caption><thead><tr><th>측정일·시간</th><th>장비</th><th>체중 kg</th><th>골격근 kg</th><th>체지방 %</th><th>상세${manage&&mode==='private'?'·관리':''}</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}<br><span class="muted">${r.time}</span></td><td>${escapeHTML(r.device)}</td><td>${format(r.weight)}</td><td>${format(r.smm)}</td><td>${format(pbfValue(r))}</td><td><div class="table-actions"><button type="button" class="small quiet" data-record-detail="${escapeHTML(recordKey(r))}">상세</button>${manage&&mode==='private'?`<button type="button" class="small quiet" data-edit="measure" data-date="${escapeHTML(recordKey(r))}">수정</button><button type="button" class="small quiet danger" data-delete="measure" data-date="${escapeHTML(recordKey(r))}">삭제</button>`:''}</div></td></tr>`).join('')}</tbody></table></div>`;}
+function measurementTable(rows,manage=true){return `<div class="table-wrap"><table><caption class="skip">측정 기록. 시간과 장비별로 구분합니다.</caption><thead><tr><th>측정일·시간</th><th>장비</th><th>체중 kg</th><th>골격근 kg</th><th>체지방 %</th><th>상세${manage&&mode==='private'?'·관리':''}</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}<br><span class="muted">${r.time}</span></td><td>${escapeHTML(r.device)}</td><td>${format(r.weight)}</td><td>${format(r.smm)}</td><td>${format(pbfValue(r))}</td><td><div class="table-actions"><button type="button" class="small quiet" data-record-detail="${escapeHTML(recordKey(r))}">상세</button>${manage&&mode==='private'?`<button type="button" class="small quiet" data-edit="measure" data-date="${escapeHTML(recordKey(r))}">수정</button><button type="button" class="small quiet danger" data-measure-delete="${escapeHTML(recordKey(r))}">삭제</button>`:''}</div></td></tr>`).join('')}</tbody></table></div>`;}
 let deviceFilter='all',csvPreview=null;
 function seedState(){const s=blankState();s.measurements=copy(DEMO.measurements);s.datasetId=DATASET_ID;return s;}
 
@@ -1147,7 +1188,7 @@ function nEffectiveProfile(){const p=nDeep(jData().profile||{});if(p.followLates
 function nProfileFill(){const p=jData().profile||{},form=$('n-profile-form');for(const k of ['weightKg','heightCm','ageYears','sexForEquation','activityLevel','oncologyContext'])form.elements[k].value=p[k]??(k==='weightKg'?nLatestWeight()?.weight??'':k==='oncologyContext'?'unknown':'');form.elements.followLatestWeight.checked=p.followLatestWeight!==false;form.elements.clinicalReviewConfirmed.checked=!!p.clinicalReviewConfirmed;for(const e of form.querySelectorAll('[name=clinicalFlags]'))e.checked=p.clinicalFlags?.includes(e.value)||false;nWeightNote();}
 function nWeightNote(){const latest=nLatestWeight();$('n-weight-note').textContent=latest?`최신 인바디: ${latest.date} · ${latest.weight} kg. 현재 체중과 다르면 위 선택을 풀고 직접 입력하세요.`:'인바디 체중이 없어요. 직접 입력하세요.';$('n-profile-form').elements.weightKg.readOnly=$('n-profile-form').elements.followLatestWeight.checked;if($('n-profile-form').elements.followLatestWeight.checked)$('n-profile-form').elements.weightKg.value=latest?.weight??'';}
 $('n-profile-form').elements.followLatestWeight.addEventListener('change',()=>{nWeightNote();nDirty('n-profile-form');});
-$('n-profile-form').addEventListener('submit',async e=>{e.preventDefault();const raw=nProfileRead(),validation=NT.validateProfile(raw);if(!validation.valid){$('n-profile-status').textContent=validation.errors.map(e=>e.message).join('\n');return;}const profile={...validation.profile,followLatestWeight:raw.followLatestWeight,nutritionGoals:jData().profile?.nutritionGoals||{}};if(await jCommit(j=>j.profile=profile,'신체 정보를 저장했어요')){jDirty.delete('n-profile-form');$('n-profile-status').textContent='암호화 저장 완료 · 참고값을 아래에서 확인하세요.';nRenderReference();}else $('n-profile-status').textContent=$('j-error').textContent;});
+$('n-profile-form').addEventListener('submit',async e=>{e.preventDefault();const raw=nProfileRead(),validation=NT.validateProfile(raw);if(!validation.valid){$('n-profile-status').textContent=validation.errors.map(e=>e.message).join('\n');return;}const profile={...jData().profile,...validation.profile,followLatestWeight:raw.followLatestWeight,nutritionGoals:jData().profile?.nutritionGoals||{}};if(await jCommit(j=>j.profile=profile,'신체 정보를 저장했어요')){jDirty.delete('n-profile-form');$('n-profile-status').textContent='암호화 저장 완료 · 참고값을 아래에서 확인하세요.';nRenderReference();}else $('n-profile-status').textContent=$('j-error').textContent;});
 function nRenderReference(){const result=NT.calculateTargets(nEffectiveProfile());if(mode!=='private'){$('n-reference').innerHTML='';return;}const range=v=>v?`${v.min}~${v.max}`:'미입력';let html='<div class="n-reference"><strong>계산 상태 · '+({ready:'일반 참고값 계산',incomplete:'입력 확인 필요',blocked:'개별 영양 상담 필요',invalid:'입력 수정 필요'}[result.status]||result.status)+'</strong>';
  if(result.general){const g=result.general;html+=`<div class="n-totals"><span>일반 에너지 추정 <strong>${g.energyKcal} kcal/일</strong></span><span>탄수화물 <strong>${range(g.carbG)} g</strong></span><span>지방 <strong>${range(g.fatG)} g</strong></span><span>일반 성인 단백질 RDA 참고 <strong>${g.proteinReferenceG} g</strong></span></div><p>건강한 성인 기준의 참고값입니다. 위전절제 후 회복 목표나 자동 처방으로 저장하지 않아요.</p>`;}
  if(result.oncologyReference){const r=result.oncologyReference;html+=`<p><strong>별도 암 환자 임상영양 참고</strong>: ${range(r.energyKcal)} kcal/일, 단백질 ${r.proteinG.min} g 초과에서 가능하면 ${r.proteinG.max} g까지. 현재 상태에 적용할지는 치료팀과 확인하세요.</p>`;}
@@ -1183,12 +1224,537 @@ const nOldJournalRender=jRender;jRender=function(){nOldJournalRender();if(!$('n-
 const nOldValidate=validateState;validateState=function(s){const result=nOldValidate(s),p=result.journal.profile;if(p&&Object.keys(p).some(k=>['weightKg','heightCm','ageYears','sexForEquation','activityLevel'].includes(k))){const check=NT.validateProfile(p);if(!check.valid)throw Error(check.errors.map(e=>e.message).join(' '));}for(const val of Object.values(p?.nutritionGoals||{}))if(val!==null&&(typeof val!=='number'||!Number.isFinite(val)||val<=0||val>2000))throw Error('백업의 영양 목표를 확인하세요.');return result;};
 nCheckServer();
 
+
 // Observed nutrition coverage remains explicit in month and clinician exports.
 function nDayNutrition(day){const totals=day.meals.map(JC.sumMealNutrition),out={};for(const k of NN.keys){const valid=totals.filter(t=>t[k]!==null);out[k]=valid.length?valid.reduce((s,t)=>s+t[k],0):null;}return {values:out,count:day.meals.length,complete:totals.filter(s=>['kcal','carbG','proteinG','fatG'].every(k=>s.coverage[k].complete)).length};}
 function nMonthNutritionHTML(){const summary=JC.summarizeMonth(jData(),jMonth),days=summary.days.filter(d=>d.meals.length);return '<h2>날짜별 섭취 기록</h2><p class="journal-footnote">기록한 음식의 합계입니다. 부분 기록과 미확인 식품은 하루 전체 섭취량을 대표하지 않아요. 현재 목표와 과거에 설정했던 목표는 다를 수 있어요.</p><div class="table-wrap"><table><thead><tr><th>날짜</th><th>열량 kcal</th><th>탄수 g</th><th>단백질 g</th><th>지방 g</th><th>탄단지·열량 입력 식사</th></tr></thead><tbody>'+days.map(d=>{const s=nDayNutrition(d);return '<tr><td>'+d.date+'</td>'+['kcal','carbG','proteinG','fatG'].map(k=>'<td>'+jVal(s.values[k])+'</td>').join('')+'<td>'+s.complete+' / '+s.count+'건</td></tr>';}).join('')+'</tbody></table></div>'+(days.length?'':'<p class="journal-empty">이 달의 식사 기록이 없어요.</p>');}
 const nOldCalendar=jRenderCalendar;jRenderCalendar=function(){nOldCalendar();if(mode!=='private')return;const old=$('n-month-nutrition');if(old)old.remove();$('j-month-summary').insertAdjacentHTML('beforeend','<article class="card" id="n-month-nutrition">'+nMonthNutritionHTML()+'</article>');};
 const nOldIntake=nRenderIntake;nRenderIntake=function(){nOldIntake();if(mode!=='private')return;const old=$('n-intake-reference');if(old)old.remove();const r=NT.calculateTargets(nEffectiveProfile());if(r.general){const g=r.general;$('n-nutrition-coverage').insertAdjacentHTML('afterend',`<details id="n-intake-reference"><summary>현재 신체 정보로 계산한 일반 참고값</summary><p class="journal-footnote">에너지 ${g.energyKcal} kcal · 탄수화물 ${g.carbG.min}~${g.carbG.max} g · 지방 ${g.fatG.min}~${g.fatG.max} g · 단백질 RDA 참고 ${g.proteinReferenceG} g. 위전절제 후 개인 목표를 뜻하지 않습니다. 위의 진행률은 직접 설정한 목표만 사용해요.</p></details>`);}};
 const nOldReport=jReportHTML;jReportHTML=function(){let html=nOldReport();const days=JC.summarizeMonth(jData(),jMonth).days,context=privateState.context;const appendix='<section><h2>지속해서 확인할 진료 메모</h2>'+[['surgery','수술·회복'],['medicine','처방·복약'],['followup','B12·검사·상담'],['question','진료 질문']].map(([k,label])=>'<p><strong>'+label+':</strong> '+jEsc(context[k]||'미입력')+'</p>').join('')+'</section><section>'+nMonthNutritionHTML()+'</section><section><h2>음식별 분량과 영양값</h2><p>일반 식품 참고값은 실제 제품·조리법과 다를 수 있습니다. 미입력은 0이 아닙니다.</p>'+days.filter(d=>d.meals.length).map(d=>'<h3>'+d.date+'</h3>'+d.meals.map(m=>'<h4>'+jEsc(m.time+' '+m.name)+'</h4>'+(m.items?.length?'<table><thead><tr><th>음식·분량</th><th>kcal</th><th>탄수 g</th><th>단백질 g</th><th>지방 g</th></tr></thead><tbody>'+m.items.map(i=>'<tr><td>'+jEsc(i.name)+' '+jVal(i.amount,i.unit)+(i.grams===null?'':' / '+jVal(i.grams,'g'))+'</td>'+['kcal','carbG','proteinG','fatG'].map(k=>'<td>'+jVal(i.nutrition[k])+'</td>').join('')+'</tr><tr><td colspan="5">식이섬유 '+jVal(i.nutrition.fiberG,'g')+' · 당류 '+jVal(i.nutrition.sugarG,'g')+' · 나트륨 '+jVal(i.nutrition.sodiumMg,'mg')+'<br>'+jEsc({catalog:'일반 식품 추정',label:'제품 라벨',manual:'직접 입력',unknown:'미확인'}[i.source])+' · '+jEsc(i.sourceNote)+'</td></tr>').join('')+'</tbody></table>':'<p>이전 한 끼 합계 기록 · 개별 음식 정보 없음</p>')).join('')).join('')+'</section>';return html.replace('</body>',appendix+'</body>');};
+
+/* Record-list navigation and narrowly scoped, durable deletion. */
+(function (global) {
+  'use strict';
+  const clone = value => JSON.parse(JSON.stringify(value));
+  const entryKeys = ['meals', 'water', 'symptoms', 'strength', 'runs'];
+  const helpers = {
+    removeMeasurement(rows, key, keyOf) {
+      if (!rows.some(row => keyOf(row) === key)) throw Error('삭제할 측정 기록을 찾지 못했어요.');
+      return rows.filter(row => keyOf(row) !== key);
+    },
+    removeDay(journal, date) {
+      const next = clone(journal);
+      next.days = next.days.filter(day => day.date !== date);
+      return next;
+    },
+    clearReview(day, blankReview) {
+      return { ...clone(day), review: clone(blankReview), notes: '' };
+    },
+    removeEntry(day, key, id) {
+      if (!entryKeys.includes(key)) throw Error('삭제할 기록 종류를 확인해 주세요.');
+      if (!day[key].some(row => row.id === id)) throw Error('삭제할 항목을 찾지 못했어요.');
+      const next = clone(day);
+      next[key] = next[key].filter(row => row.id !== id);
+      return next;
+    },
+    async persistChange(read, write, next, persist) {
+      const previous = read();
+      write(next);
+      try { await persist(); } catch (error) { write(previous); throw error; }
+    }
+  };
+  if (typeof module === 'object' && module.exports) { module.exports = helpers; return; }
+  global.WeelogRecords = helpers;
+  const list = $('measure-table').closest('article');
+  // Legacy daily summaries once shared this article with the measurement list.
+  list.hidden = false;
+  list.removeAttribute('data-legacy-summary');
+  list.id = 'r-measurements-list';
+  list.tabIndex = -1;
+  list.setAttribute('aria-label', '전체 체성분 기록');
+  const legacyTable = $('daily-table');
+  if (legacyTable?.previousElementSibling?.tagName === 'H2') legacyTable.previousElementSibling.hidden = true;
+  const title = list.querySelector('h2');
+  if (title) title.textContent = '전체 체성분 기록';
+  $('measure-table').insertAdjacentHTML('beforebegin', '<div class="r-list-toolbar"><p id="r-list-status" role="status"></p><button type="button" data-r-manage class="quiet">내 기록에서 수정·삭제</button><button type="button" data-start-records>측정 추가</button></div>');
+  for (const button of document.querySelectorAll('.recent-records [data-panel="records"]')) {
+    button.removeAttribute('data-panel');
+    button.setAttribute('data-show-measurements', '');
+    button.setAttribute('aria-controls', list.id);
+  }
+  $('j-status').insertAdjacentHTML('afterend', '<div id="r-day-actions" class="r-delete-actions"><button type="button" data-r-delete-day class="quiet danger">이 날짜 기록 삭제</button><span id="r-delete-status" role="status"></span></div>');
+  $('j-review-form').insertAdjacentHTML('afterend', '<div class="r-review-delete"><button type="button" data-r-delete-review class="quiet danger">저장한 하루 체크 삭제</button></div>');
+
+  function showMeasurements() {
+    setPanel('records', true);
+    renderTables();
+    list.hidden = false;
+    list.scrollIntoView({ block: 'start', behavior: 'instant' });
+    list.focus({ preventScroll: true });
+  }
+  function revealEditor() {
+    for (let parent = $('measure-form').parentElement; parent; parent = parent.parentElement) {
+      if (parent.tagName === 'DETAILS') parent.open = true;
+      if (parent.id === 'panel-records') break;
+    }
+  }
+  const originalEdit = editRecord;
+  editRecord = function (kind, key) { if (kind === 'measure') revealEditor(); return originalEdit(kind, key); };
+  const originalDetail = showMeasurementDetail;
+  showMeasurementDetail = function (key, preview = false) {
+    originalDetail(key, preview);
+    if (preview || !$('measurement-dialog').open) return;
+    const actions = document.createElement('div');
+    actions.className = 'r-detail-actions';
+    actions.innerHTML = mode === 'private'
+      ? `<button type="button" data-r-edit-measure="${escapeHTML(key)}">이 측정 수정</button><button type="button" class="danger" data-measure-delete="${escapeHTML(key)}">이 측정 삭제</button>`
+      : '<button type="button" data-r-manage>내 기록에서 수정·삭제</button>';
+    $('detail-content').prepend(actions);
+  };
+  function renderDeletionControls() {
+    const privateMode = mode === 'private';
+    $('r-list-status').textContent = `${state().measurements.length}회 · 전체 기간·모든 장비${privateMode ? ' · 삭제는 내 기록에만 반영돼요.' : ' · 공개 이력'}`;
+    document.querySelectorAll('[data-r-manage]').forEach(button => button.hidden = privateMode);
+    $('r-day-actions').hidden = !privateMode;
+    const day = jDay(), hasDay = JC.hasDayData(day);
+    const hasReview = !!day.notes || JSON.stringify(day.review) !== JSON.stringify(JC.blankDay(jDate).review);
+    document.querySelector('[data-r-delete-day]').disabled = !privateMode || !hasDay || jBusy;
+    document.querySelector('[data-r-delete-review]').disabled = !privateMode || !hasReview || jBusy;
+    document.querySelector('[data-r-delete-review]').closest('.r-review-delete').hidden = !privateMode;
+    document.querySelectorAll('[data-measure-delete]').forEach(button => button.disabled = !privateMode || jBusy);
+  }
+  const oldRenderTables = renderTables;
+  renderTables = function () { oldRenderTables(); renderDeletionControls(); };
+  const oldJournalRender = jRender;
+  jRender = function () { oldJournalRender(); renderDeletionControls(); };
+
+  async function deleteMeasurement(key) {
+    if (mode !== 'private' || jBusy) return;
+    const row = privateState.measurements.find(item => recordKey(item) === key);
+    if (!row) return;
+    if (!confirm(`${row.date} ${row.time} · ${row.device}\n체중 ${row.weight} kg 측정을 내 기록에서 삭제할까요?\n공개 사이트에 실린 원본 이력은 바뀌지 않아요.`)) return;
+    // Close the detail dialog before a possible first-save password dialog.
+    if ($('measurement-dialog').open) closeMeasurementDetail();
+    jBusy = true;
+    jBusyControls(true);
+    try {
+      if (!await jEnsureStorage()) return;
+      for (const id of ['demo-mode', 'private-mode', 'lock-vault', 'clear-vault', 'restore-vault']) $(id).disabled = true;
+      const next = helpers.removeMeasurement(privateState.measurements, key, recordKey);
+      await helpers.persistChange(() => privateState.measurements, value => privateState.measurements = value, next, writePersisted);
+      if ($('m-original-key').value === key) {
+        $('measure-form').reset();
+        $('m-original-key').value = '';
+      }
+      toast('측정을 삭제하고 암호화 저장했어요.');
+    } catch (error) {
+      toast('삭제를 저장하지 못해 원래 기록을 유지했어요. 저장 공간을 확인하고 다시 시도해 주세요.');
+    } finally {
+      jBusy = false;
+      jBusyControls(false);
+      render();
+    }
+  }
+
+  async function deleteDay(reviewOnly) {
+    if (mode !== 'private' || jBusy) return;
+    const date = jDate;
+    const scope = reviewOnly ? '저장한 하루 체크와 하루 메모' : '식사·수분·증상·근력·러닝·하루 체크';
+    if (!confirm(`${date}의 ${scope}를 삭제할까요?\n${reviewOnly ? '식사·수분·증상·운동 기록은 유지돼요.' : '체성분 측정, 식사·운동 계획, 목표와 다른 날짜 기록은 유지돼요.'}\n해당 입력창의 저장하지 않은 내용도 비워져요.`)) return;
+    const priorLegacy = privateState.daily;
+    let legacyChanged = false;
+    const ok = await jCommit(journal => {
+      if (reviewOnly) {
+        const index = journal.days.findIndex(day => day.date === date);
+        if (index >= 0) {
+          journal.days[index] = helpers.clearReview(journal.days[index], JC.blankDay(date).review);
+          journal.days[index].updatedAt = new Date().toISOString();
+        }
+      } else {
+        journal.days = helpers.removeDay(journal, date).days;
+        privateState.daily = privateState.daily.filter(day => day.date !== date);
+        legacyChanged = true;
+      }
+    }, reviewOnly ? '하루 체크를 삭제했어요' : `${date} 기록을 삭제했어요`);
+    if (!ok && legacyChanged) privateState.daily = priorLegacy;
+    if (ok) {
+      if (!reviewOnly) for (const id of Object.keys(jEntryForms)) jResetForm(id);
+      jFillForm('j-review-form', { ...JC.blankDay(date).review, notes: '' });
+      $('r-delete-status').textContent = `${date} · ${reviewOnly ? '하루 체크' : '날짜 기록'} 삭제 완료`;
+    }
+    render();
+  }
+  async function deleteEntry(key, id) {
+    if (mode !== 'private' || jBusy || !entryKeys.includes(key)) return;
+    const date = jDate, row = jDay()[key].find(entry => entry.id === id);
+    if (!row) return;
+    const labels = { meals: '식사', water: '수분', symptoms: '증상', strength: '근력운동', runs: '러닝·걷기' };
+    if (!confirm(`${date} ${row.time || ''} · ${labels[key]} 기록을 삭제할까요?\n${row.name || (key === 'water' ? row.amountMl + ' ml' : '')}`.trim())) return;
+    const ok = await jCommit(journal => {
+      const index = journal.days.findIndex(day => day.date === date);
+      if (index < 0) throw Error('삭제할 기록을 찾지 못했어요.');
+      journal.days[index] = helpers.removeEntry(journal.days[index], key, id);
+      journal.days[index].updatedAt = new Date().toISOString();
+    }, `${labels[key]} 기록을 삭제했어요`);
+    if (ok) {
+      const formId = Object.keys(jEntryForms).find(name => jEntryForms[name] === key);
+      if ($(formId).elements.entryId.value === id) jResetForm(formId);
+    }
+  }
+  // Capture only these deletion actions before the legacy delegated listener.
+  document.addEventListener('submit', event => {
+    if (jBusy && event.target.id === 'measure-form') {
+      event.preventDefault(); event.stopImmediatePropagation();
+      toast('저장이 끝난 뒤 다시 시도해 주세요. 입력 내용은 그대로 있어요.');
+    }
+  }, true);
+  document.addEventListener('change', event => {
+    if (jBusy && event.target.id === 'inbody-file') {
+      event.stopImmediatePropagation(); event.target.value = '';
+      toast('저장이 끝난 뒤 CSV 파일을 다시 선택해 주세요.');
+    }
+  }, true);
+  document.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    if (jBusy && (button.id === 'csv-apply' || button.hasAttribute('data-csv-open'))) {
+      event.preventDefault(); event.stopImmediatePropagation();
+      toast('저장이 끝난 뒤 다시 시도해 주세요.'); return;
+    }
+    if (button.hasAttribute('data-measure-delete')) { event.preventDefault(); event.stopImmediatePropagation(); void deleteMeasurement(button.dataset.measureDelete); }
+    else if (button.hasAttribute('data-j-delete')) { event.preventDefault(); event.stopImmediatePropagation(); void deleteEntry(button.dataset.jDelete, button.dataset.id); }
+    else if (button.hasAttribute('data-r-delete-day')) { event.preventDefault(); event.stopImmediatePropagation(); void deleteDay(false); }
+    else if (button.hasAttribute('data-r-delete-review')) { event.preventDefault(); event.stopImmediatePropagation(); void deleteDay(true); }
+  }, true);
+  document.addEventListener('click', async event => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    if (button.hasAttribute('data-show-measurements')) showMeasurements();
+    if (button.hasAttribute('data-r-manage')) {
+      if ($('measurement-dialog').open) closeMeasurementDetail();
+      await enterPrivate();
+      if (mode === 'private') showMeasurements();
+    }
+    if (button.hasAttribute('data-r-edit-measure')) {
+      const key = button.dataset.rEditMeasure;
+      closeMeasurementDetail();
+      editRecord('measure', key);
+    }
+    if (button.hasAttribute('data-start-records')) revealEditor();
+  });
+  global.weelogRecords = { showMeasurements, revealEditor, renderDeletionControls };
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/* Observed daily coverage and chronology. No clinical scoring or causal claims. */
+(function (root) {
+  'use strict';
+  const array = value => Array.isArray(value) ? value : [];
+  const number = value => typeof value === 'number' && Number.isFinite(value);
+  function validDate(value) {
+    if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value) || value.startsWith('0000')) return false;
+    const parsed = new Date(value + 'T00:00:00Z');
+    return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+  }
+  function minute(time) {
+    if (typeof time !== 'string' || !/^(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?$/.test(time)) return null;
+    const [h, m, s = 0] = time.split(':').map(Number);
+    return h * 60 + m + s / 60;
+  }
+  function priorDate(date) {
+    if (!validDate(date)) return '';
+    return new Date(Date.parse(date + 'T00:00:00Z') - 86400000).toISOString().slice(0, 10);
+  }
+  function hasReview(review) {
+    return Object.entries(review || {}).some(([key, value]) => key !== 'completed' && (number(value) || value === true || (typeof value === 'string' && value.trim())));
+  }
+  function dailyCoverage(day, dirtyForms = []) {
+    day = day || {};
+    const meals = array(day.meals), water = array(day.water), symptoms = array(day.symptoms), strength = array(day.strength), runs = array(day.runs), review = day.review || {};
+    const mealMissingAmount = meals.filter(meal => array(meal.items).length
+      ? meal.items.some(food => !number(food.amount) && !number(food.grams)) : !number(meal.amount)).length;
+    const mealMissingTime = meals.filter(meal => minute(meal.time) === null).length;
+    const symptomsObserved = symptoms.length > 0 || ['appetite', 'fatigue', 'pain', 'mouthSores', 'neuropathy', 'vomits'].some(key => number(review[key]) && review[key] > 0);
+    const observationConflict = review.symptomFree === true && symptomsObserved;
+    const dirty = new Set(array(dirtyForms));
+    const rows = [
+      { key: 'meals', label: '식사', form: 'j-meal-form', tab: 'food', status: meals.length ? mealMissingAmount || mealMissingTime ? 'partial' : 'recorded' : 'empty',
+        text: meals.length ? `${meals.length}건 저장` : '아직 저장한 식사가 없어요',
+        detail: [mealMissingAmount ? `양 미입력 ${mealMissingAmount}건` : '', mealMissingTime ? `시각 미입력 ${mealMissingTime}건` : ''].filter(Boolean).join(' · ') },
+      { key: 'water', label: '수분', form: 'j-water-form', tab: 'food', status: water.length ? 'recorded' : 'empty',
+        text: water.length ? `${water.reduce((sum, item) => sum + (number(item.amountMl) ? item.amountMl : 0), 0)} ml · ${water.length}건 저장` : '아직 저장한 수분이 없어요', detail: '수분 기록에 입력한 양만 합산' },
+      { key: 'symptoms', label: '증상', form: symptoms.length ? 'j-symptom-form' : 'j-review-form', tab: 'health', status: observationConflict ? 'conflict' : symptomsObserved || review.symptomFree ? 'recorded' : 'empty',
+        text: observationConflict ? '증상 기록과 ‘증상 없음’이 함께 있어요' : symptoms.length ? `상세 증상 ${symptoms.length}건 저장` : symptomsObserved ? '하루 체크에 불편을 기록했어요' : review.symptomFree ? '증상 없음으로 직접 체크했어요' : '증상 여부를 아직 확인하지 않았어요',
+        detail: symptoms.length && symptoms.some(item => minute(item.time) === null) ? '시각 없는 증상은 시간표에서 따로 표시' : '' },
+      { key: 'review', label: '하루 체크', form: 'j-review-form', tab: 'health', status: review.completed ? 'recorded' : hasReview(review) || day.notes ? 'partial' : 'empty',
+        text: review.completed ? '체크 완료로 저장했어요' : hasReview(review) || day.notes ? '일부 항목 저장 · 완료 체크 전' : '아는 항목만 입력해도 저장할 수 있어요', detail: '' },
+      { key: 'activity', label: '운동 · 선택', form: 'j-strength-form', tab: 'activity', status: strength.length || runs.length ? 'recorded' : 'optional',
+        text: strength.length || runs.length ? `근력 ${strength.length}건 · 러닝/걷기 ${runs.length}건 저장` : '운동한 날에만 남겨 주세요', detail: '' }
+    ];
+    for (const row of rows) row.dirty = row.key === 'activity' ? dirty.has('j-strength-form') || dirty.has('j-run-form') : row.key === 'symptoms' ? dirty.has('j-symptom-form') || dirty.has('j-review-form') : dirty.has(row.form);
+    const dailyForms = ['j-meal-form', 'j-water-form', 'j-symptom-form', 'j-review-form', 'j-strength-form', 'j-run-form'];
+    return { date: day.date || '', rows, unsavedForms: dailyForms.filter(id => dirty.has(id)), mealMissingAmount, mealMissingTime,
+      hasSaved: meals.length + water.length + symptoms.length + strength.length + runs.length > 0 || hasReview(review) || !!review.completed || !!day.notes || !!day.legacy,
+      updatedAt: day.updatedAt || '' };
+  }
+  function eventOf(date, kind, row, offset = 0) {
+    const at = minute(row.time);
+    return { date, kind, id: row.id, time: row.time || '', minute: at === null ? null : at + offset, name: row.name || '', row };
+  }
+  function relationship(symptom, meals, date) {
+    const reportedMinutes = number(symptom.row.afterMealMin) ? symptom.row.afterMealMin : null;
+    const explicitTime = minute(symptom.row.mealTime);
+    const result = { kind: 'unknown', meals: [], elapsedMinutes: null, reportedMinutes, explicitTime: symptom.row.mealTime || '', crossDay: false, discrepancy: false };
+    if (symptom.minute === null) {
+      result.kind = explicitTime !== null ? 'time-unresolved' : 'unknown';
+      return result;
+    }
+    if (explicitTime !== null) {
+      const requestedMinute = explicitTime > symptom.minute ? explicitTime - 1440 : explicitTime;
+      result.meals = meals.filter(meal => meal.minute !== null && meal.minute === requestedMinute);
+      result.kind = result.meals.length ? 'matched-time' : 'time-unresolved';
+    } else {
+      const preceding = meals.filter(meal => meal.minute !== null && meal.minute <= symptom.minute).sort((a, b) => b.minute - a.minute);
+      if (preceding.length) {
+        result.meals = preceding.filter(meal => meal.minute === preceding[0].minute);
+        result.kind = 'preceding';
+      }
+    }
+    if (result.meals.length) {
+      result.elapsedMinutes = Number((symptom.minute - result.meals[0].minute).toFixed(2));
+      result.crossDay = result.meals[0].date !== date;
+      result.discrepancy = reportedMinutes !== null && Math.abs(reportedMinutes - result.elapsedMinutes) > 0.01;
+    }
+    return result;
+  }
+  function mealSymptomTimeline(journal, date) {
+    if (!validDate(date)) throw Error('실제 날짜를 선택해 주세요.');
+    const days = array(journal?.days), day = days.find(value => value.date === date) || { date }, previous = days.find(value => value.date === priorDate(date));
+    const todayMeals = array(day.meals).map(row => eventOf(date, 'meals', row));
+    const previousMeals = array(previous?.meals).map(row => eventOf(previous.date, 'meals', row, -1440));
+    const meals = [...previousMeals, ...todayMeals];
+    const symptoms = array(day.symptoms).map(row => eventOf(date, 'symptoms', row));
+    for (const symptom of symptoms) symptom.relation = relationship(symptom, meals, date);
+    const referencedPrevious = new Set(symptoms.flatMap(event => event.relation.meals.filter(meal => meal.date !== date).map(meal => meal.id)));
+    const context = previousMeals.filter(meal => referencedPrevious.has(meal.id)).map(meal => ({ ...meal, context: true }));
+    const events = [...context, ...todayMeals, ...symptoms];
+    const timed = events.filter(event => event.minute !== null).sort((a, b) => a.minute - b.minute || (a.kind === b.kind ? String(a.id).localeCompare(String(b.id)) : a.kind === 'meals' ? -1 : 1));
+    return { date, timed, untimed: events.filter(event => event.minute === null), mealCount: todayMeals.length, symptomCount: symptoms.length,
+      symptomFree: day.review?.symptomFree === true, contextMealCount: context.length };
+  }
+  const api = Object.freeze({ dailyCoverage, mealSymptomTimeline, minute, priorDate });
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  if (root) root.WeelogDailyInsights = api;
+})(typeof window !== 'undefined' ? window : null);
+
+/* Saved-record checklist and editable meal/symptom chronology. */
+(function () {
+  'use strict';
+  const D = window.WeelogDailyInsights;
+  const diary = $('panel-diary');
+  if (!D || !diary) return;
+  $('j-day-stats').insertAdjacentHTML('afterend', '<section id="d-record-check" class="d-check" aria-labelledby="d-check-title"><div class="d-section-head"><h2 id="d-check-title">오늘 기록 확인</h2><span id="d-check-date"></span></div><p id="d-save-state" class="d-save-state" role="status"></p><ul id="d-check-list" class="d-check-list"></ul><p class="d-explanation">저장한 기록을 확인하는 목록이에요. 식사 횟수나 수분량의 적정 여부를 판정하지 않아요.</p></section>');
+  $('j-status').insertAdjacentHTML('beforebegin', '<section id="d-meal-timeline" class="d-timeline" aria-labelledby="d-timeline-title"><div class="d-section-head"><h2 id="d-timeline-title">식사–증상 시간표</h2><span id="d-timeline-date"></span></div><p class="d-explanation">선택한 날짜에 저장한 기록입니다. 시간상 가까운 식사가 증상의 원인이라는 뜻은 아니에요.</p><div id="d-timeline-content"></div></section>');
+  const statusText = { recorded: '저장됨', partial: '일부 입력', empty: '미기록', optional: '선택', conflict: '확인 필요' };
+  function stamp(value) {
+    if (!value || !Number.isFinite(Date.parse(value))) return '';
+    return new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(value));
+  }
+  function checklist() {
+    const hidden = mode !== 'private';
+    $('d-record-check').hidden = hidden;
+    if (hidden) { $('d-check-list').innerHTML = ''; $('d-save-state').textContent = ''; return; }
+    const coverage = D.dailyCoverage(jDay(), [...jDirty]);
+    $('d-check-title').textContent = jDate === jToday() ? '오늘 기록 확인' : '이 날의 기록 확인';
+    $('d-check-date').textContent = jDate;
+    $('d-save-state').dataset.state = jBusy ? 'saving' : coverage.unsavedForms.length ? 'draft' : 'saved';
+    $('d-save-state').textContent = jBusy ? '저장 중…' : coverage.unsavedForms.length ? `저장하지 않은 입력 ${coverage.unsavedForms.length}곳 · 아래 목록과 시간표에는 저장된 내용만 표시해요.` : coverage.hasSaved ? `${persistence ? '암호화 저장 사용 중' : '현재 탭에서 확인 중'}${stamp(coverage.updatedAt) ? ' · 마지막 기록 저장 ' + stamp(coverage.updatedAt) : ''}` : '이 날짜에 저장한 하루 기록이 없어요.';
+    $('d-check-list').innerHTML = coverage.rows.map(row => `<li data-state="${row.status}"><span class="d-check-label">${row.label}</span><div><strong>${jEsc(row.text)}</strong>${row.detail ? `<small>${jEsc(row.detail)}</small>` : ''}${row.dirty ? '<small class="d-draft">이 항목에 저장하지 않은 입력이 있어요</small>' : ''}</div><span class="d-check-state">${statusText[row.status]}</span><button type="button" data-d-focus="${row.form}" data-d-tab="${row.tab}">${row.status === 'empty' || row.status === 'optional' ? '입력' : '확인'}</button></li>`).join('');
+  }
+  function foodDescription(meal) {
+    return meal.items?.length ? meal.items.map(item => `${item.name} ${item.amount === null || item.amount === undefined ? '양 미입력' : item.amount + ' ' + item.unit}`).join(' · ') : [meal.amount === null || meal.amount === undefined ? '양 미입력' : meal.amount + ' ' + meal.unit, meal.note].filter(Boolean).join(' · ');
+  }
+  function relationHTML(relation) {
+    let text = '';
+    const minuteText = value => Number.isInteger(value) ? value : Math.round(value * 10) / 10;
+    if (relation.meals.length) {
+      const meal = relation.meals[0], names = relation.meals.map(item => item.name).join(' / ');
+      text = `${relation.kind === 'matched-time' ? '입력한 식사 시각과 일치' : '시간상 앞선 식사 · 관계 미확인'}: ${relation.crossDay ? meal.date + ' ' : ''}${meal.time} ${names} → ${minuteText(relation.elapsedMinutes)}분 간격`;
+      if (relation.crossDay && relation.kind === 'matched-time') text += ' · 전날 기록과 시각 비교';
+      if (relation.meals.length > 1) text += ' · 같은 시각 식사 여러 건';
+    } else if (relation.explicitTime) text = `직접 적은 관련 식사 ${relation.explicitTime} · 날짜·시각을 대조할 식사 기록이 없어요`;
+    else text = '식사와의 시간 간격을 확인할 수 없어요';
+    if (relation.reportedMinutes !== null) text += ` · 직접 적은 식후 경과 ${relation.reportedMinutes}분${relation.discrepancy ? ' (기록 시각의 간격과 다름)' : ''}`;
+    return `<p class="d-relation">${jEsc(text)}</p>`;
+  }
+  function eventHTML(event) {
+    const row = event.row, food = event.kind === 'meals';
+    const details = food ? foodDescription(row) : [row.severity === null || row.severity === undefined ? '강도 미입력' : `강도 ${row.severity}/10`, row.durationMin === null || row.durationMin === undefined ? '' : `${row.durationMin}분 지속`, row.note].filter(Boolean).join(' · ');
+    return `<li class="d-event ${food ? 'd-event-meal' : 'd-event-symptom'}${event.context ? ' d-event-context' : ''}"><div class="d-event-time">${event.context ? '<small>전날 ' + jEsc(event.date.slice(5)) + '</small>' : ''}<time>${jEsc(event.time || '시각 미입력')}</time></div><div class="d-event-body"><span class="d-event-kind">${food ? '식사' : '증상'}${event.context ? ' · 비교용 앞선 기록' : ''}</span><h3>${jEsc(row.name)}</h3><p>${jEsc(details)}</p>${event.relation ? relationHTML(event.relation) : ''}</div><button type="button" data-d-open-record="${event.kind}" data-d-id="${jEsc(event.id)}" data-d-date="${jEsc(event.date)}" aria-label="${jEsc(event.date + ' ' + (event.time || '시각 미입력') + ' ' + row.name + ' 수정')}">수정</button></li>`;
+  }
+  function timeline() {
+    $('d-meal-timeline').hidden = mode !== 'private';
+    if (mode !== 'private') { $('d-timeline-content').innerHTML = ''; return; }
+    const result = D.mealSymptomTimeline(jData(), jDate);
+    $('d-timeline-date').textContent = `${jDate} · 식사 ${result.mealCount}건 · 증상 ${result.symptomCount}건`;
+    $('d-timeline-content').innerHTML = result.timed.length || result.untimed.length ? `${result.timed.length ? '<ol class="d-events">' + result.timed.map(eventHTML).join('') + '</ol>' : ''}${result.untimed.length ? '<div class="d-untimed"><h3>시각 미입력</h3><p class="d-explanation">순서를 정할 수 없어 따로 모았어요. 수정에서 시각을 추가할 수 있습니다.</p><ul class="d-events">' + result.untimed.map(eventHTML).join('') + '</ul></div>' : ''}${result.symptomFree ? '<p class="d-explanation">이 날짜는 ‘증상 없음’으로 직접 체크했어요.</p>' : ''}` : `<p class="d-empty">${result.symptomFree ? '증상 없음으로 체크했어요. 식사를 저장하면 시간표에 표시됩니다.' : '식사나 증상을 저장하면 시간순으로 모아 보여요.'}</p><button type="button" data-d-focus="j-meal-form" data-d-tab="food">식사 기록하기</button>`;
+  }
+  function renderInsights() { checklist(); timeline(); }
+  const previousRender = jRender;
+  jRender = function () { previousRender(); renderInsights(); };
+  for (const type of ['input', 'change']) document.addEventListener(type, event => {
+    if (event.target.closest('#panel-diary form')) queueMicrotask(checklist);
+  });
+  const previousReset = jResetForm;
+  jResetForm = function (id) { previousReset(id); checklist(); };
+  const previousFill = jFillForm;
+  jFillForm = function (id, entry) { previousFill(id, entry); checklist(); };
+  const previousCommit = jCommit;
+  jCommit = async function (update, message) {
+    const pending = previousCommit(update, message);
+    checklist();
+    const result = await pending;
+    setTimeout(checklist, 0);
+    return result;
+  };
+  function focusForm(formId, tab) {
+    setPanel('diary'); jSetTab(tab);
+    const form = $(formId);
+    form.scrollIntoView({ behavior: 'instant', block: 'start' });
+    form.querySelector('input:not([type=hidden]),select,textarea')?.focus({ preventScroll: true });
+  }
+  document.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button || mode !== 'private') return;
+    if (button.dataset.dFocus) focusForm(button.dataset.dFocus, button.dataset.dTab);
+    if (button.dataset.dOpenRecord) {
+      const date = button.dataset.dDate, key = button.dataset.dOpenRecord, formId = key === 'meals' ? 'j-meal-form' : 'j-symptom-form';
+      if (jBusy) return;
+      if (date === jDate && jDirty.has(formId) && !confirm('이 입력칸에 저장하지 않은 내용이 있어요. 저장된 기록을 불러올까요?')) return;
+      if (date !== jDate) { jMoveDate(date); if (jDate !== date) return; }
+      const row = jDay()[key]?.find(item => item.id === button.dataset.dId);
+      if (!row) return;
+      jFillForm(formId, row);
+      focusForm(formId, key === 'meals' ? 'food' : 'health');
+    }
+    queueMicrotask(checklist);
+  });
+})();
+
+(function(root,factory){'use strict';const api=factory(typeof module==='object'&&module.exports?require('../journal/core.js'):root.WeelogJournalCore);if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.WeelogVisit=api;})(typeof window!=='undefined'?window:globalThis,function(JC){
+ 'use strict';
+ const metrics=[['weight','체중','kg'],['smm','골격근량','kg'],['fat','체지방량','kg'],['pbf','체지방률','%']];
+ const finite=v=>typeof v==='number'&&Number.isFinite(v),sum=values=>{const n=values.filter(finite);return n.length?n.reduce((a,b)=>a+b,0):null;};
+ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const val=(v,unit='')=>finite(v)?Math.round(v*10)/10+(unit?' '+unit:''):'미입력';
+ function nextDate(date){return new Date(Date.parse(date+'T00:00:00Z')+86400000).toISOString().slice(0,10);}
+ function validateRange(raw,today){if(!JC.validDate(today))throw Error('오늘 날짜를 확인해 주세요.');const mode=raw?.mode==='since'?'since':'range';if(raw?.mode&&!['since','range'].includes(raw.mode))throw Error('기간 선택을 확인해 주세요.');const through=raw?.through||'';if(!JC.validDate(through)||through>today)throw Error('마지막 날짜는 오늘까지의 실제 날짜로 선택하세요.');let from=raw?.from||'',lastVisit=raw?.lastVisit||'';if(lastVisit&&!JC.validDate(lastVisit))throw Error('지난 진료일을 확인해 주세요.');if(mode==='since'){if(!JC.validDate(lastVisit))throw Error('지난 진료일을 입력하세요.');if(lastVisit>=through)throw Error('지난 진료일 다음 날부터 마지막 날짜까지 선택하세요.');from=nextDate(lastVisit);}if(!JC.validDate(from)||from>through)throw Error('시작 날짜는 마지막 날짜보다 늦을 수 없어요.');const calendarDays=Math.round((Date.parse(through+'T00:00:00Z')-Date.parse(from+'T00:00:00Z'))/86400000)+1;if(calendarDays>3660)throw Error('요약 기간은 10년 이내로 선택하세요.');return {mode,lastVisit,from,through,calendarDays};}
+ function measureValue(row,key){if(!row)return null;if(key==='pbf'&&!finite(row.pbf)&&finite(row.fat)&&row.weight>0)return row.fat/row.weight*100;return finite(row[key])?row[key]:null;}
+ function measurementChange(measurements,range){const rows=(Array.isArray(measurements)?measurements:[]).filter(r=>JC.validDate(r.date)&&r.date<=range.through).slice().sort((a,b)=>(a.date+' '+(a.time||'')).localeCompare(b.date+' '+(b.time||''))),within=rows.filter(r=>r.date>=range.from),latest=within.at(-1)||null;let baseline=null,method='none';if(latest&&typeof latest.device==='string'&&latest.device.trim()){const matching=rows.filter(r=>r!==latest&&r.device===latest.device&&r.date<range.from);baseline=matching.at(-1)||null;method=baseline?'before-period':'none';if(!baseline){const same=within.filter(r=>r!==latest&&r.device===latest.device);baseline=same[0]||null;method=baseline?'first-in-period':'none';}}return {count:within.length,latest,baseline,method,metrics:metrics.map(([key,label,unit])=>{const a=measureValue(baseline,key),b=measureValue(latest,key);return {key,label,unit,baseline:a,latest:b,delta:finite(a)&&finite(b)?b-a:null,baselineDerived:key==='pbf'&&baseline&&!finite(baseline.pbf)&&finite(a),latestDerived:key==='pbf'&&latest&&!finite(latest.pbf)&&finite(b)};})};}
+ function summary(journal,measurements,context,raw,today){const range=validateRange(raw,today),days=(journal?.days||[]).filter(d=>d.date>=range.from&&d.date<=range.through&&JC.hasDayData(d)).slice().sort((a,b)=>a.date.localeCompare(b.date));const symptoms=new Map(),questions=new Map();let assessedDays=0,symptomFreeDays=0,conflictDays=0;
+  const question=(text,date)=>{for(const line of String(text||'').split(/\n+/).map(s=>s.trim()).filter(Boolean)){if(!questions.has(line))questions.set(line,new Set());questions.get(line).add(date);}};
+  for(const d of days){const events=(d.symptoms||[]).filter(e=>e.severity!==0),review=d.review||{},reviewHasSymptoms=['appetite','fatigue','pain','mouthSores','neuropathy','vomits'].some(k=>finite(review[k])&&review[k]>0);if((d.symptoms||[]).length||review.symptomFree)assessedDays++;if(review.symptomFree){symptomFreeDays++;if(events.length||reviewHasSymptoms)conflictDays++;}for(const e of events){if(!symptoms.has(e.name))symptoms.set(e.name,{name:e.name,events:0,dates:new Set(),maxSeverity:null});const s=symptoms.get(e.name);s.events++;s.dates.add(d.date);if(finite(e.severity))s.maxSeverity=Math.max(s.maxSeverity??0,e.severity);}question(review.doctorQuestions,d.date);}
+  const mealDays=days.filter(d=>d.meals?.length),waterDays=days.filter(d=>d.water?.length),meals=mealDays.flatMap(d=>d.meals),totals=meals.map(JC.sumMealNutrition),nutrients={};for(const key of ['kcal','carbG','proteinG','fatG']){const values=totals.map(t=>t[key]);nutrients[key]={total:sum(values),knownMeals:values.filter(finite).length,completeMeals:totals.filter(t=>t.coverage[key].complete).length};}const waterTotal=sum(waterDays.flatMap(d=>d.water.map(w=>w.amountMl))),allStrength=days.flatMap(d=>d.strength||[]),allRuns=days.flatMap(d=>d.runs||[]);
+  return {range,days,recordedDays:days.length,missingDays:range.calendarDays-days.length,completedDays:days.filter(d=>d.review?.completed).length,assessedDays,symptomFreeDays,conflictDays,symptoms:[...symptoms.values()].map(s=>({...s,dates:[...s.dates],days:s.dates.size})).sort((a,b)=>b.days-a.days||b.events-a.events||a.name.localeCompare(b.name)),questions:[...questions].map(([text,dates])=>({text,dates:[...dates]})),context:{surgery:String(context?.surgery||''),medicine:String(context?.medicine||''),followup:String(context?.followup||''),question:String(context?.question||'')},measurements:measurementChange(measurements,range),intake:{mealDays:mealDays.length,mealCount:meals.length,nutrients,waterDays:waterDays.length,waterTotal,waterAverage:waterDays.length?waterTotal/waterDays.length:null},activity:{strengthSessions:allStrength.length,strengthDays:days.filter(d=>d.strength?.length).length,runSessions:allRuns.length,runDistance:sum(allRuns.map(r=>r.distanceKm))}};
+ }
+ function symptomDetails(s,expanded){const rows=s.days.flatMap(d=>(d.symptoms||[]).map(e=>({date:d.date,...e})));if(!rows.length)return '<p class="v-note">선택한 기간에 저장한 상세 증상이 없어요.</p>';return '<details class="v-symptom-details"'+(expanded?' open':'')+'><summary>증상 원기록 '+rows.length+'건 · 시각·지속·메모 확인</summary><p class="v-note">강도 0인 기록도 아래 원기록에 남겨요. 식사 시각과 식후 경과는 직접 입력한 값이며 시간 관계만으로 원인을 판단하지 않습니다.</p>'+rows.map(e=>'<div class="v-symptom-row"><h4>'+esc(e.date)+' · '+esc(e.time||'시각 미입력')+' · '+esc(e.name)+'</h4><p>강도 '+val(e.severity)+' /10 · 지속 '+val(e.durationMin,'분')+(e.mealTime?' · 기록한 관련 식사 '+esc(e.mealTime):' · 관련 식사 시각 미입력')+(finite(e.afterMealMin)?' · 직접 기록한 식후 경과 '+val(e.afterMealMin,'분'):'')+'</p>'+(e.note?'<p>'+esc(e.note)+'</p>':'<p class="v-note">추가 메모 미입력</p>')+'</div>').join('')+'</details>';}
+ function html(s,options={}){const r=s.range,m=s.measurements,stamp=row=>row?esc(row.date+' '+(row.time||'시각 미입력')+' · '+(row.device||'장비 미입력')):'비교 가능한 측정 없음',questionHTML=s.questions.length?'<ol>'+s.questions.map(q=>'<li><span>'+esc(q.text)+'</span><small>'+q.dates.map(esc).join(', ')+'</small></li>').join('')+'</ol>':'<p>선택한 기간에 저장한 진료 질문이 없어요.</p>';return '<header class="v-document-head"><p class="v-kicker">위로그 · 진료 준비</p><h2>'+esc(r.from)+' — '+esc(r.through)+'</h2><p>'+(r.mode==='since'?'지난 진료일 '+esc(r.lastVisit)+'은 제외하고 다음 날부터 집계했어요.':'시작일과 마지막 날짜를 모두 포함했어요.')+'</p><p>위전절제일 '+esc(options.surgeryDate||'2025-11-14')+' · 본인이 저장한 관찰 기록</p></header><section><h3>먼저 확인할 기록</h3><p>일지 <strong>'+s.recordedDays+' / '+r.calendarDays+'일</strong> · 하루 체크 완료 '+s.completedDays+'일 · 일지 미기록 '+s.missingDays+'일</p><p class="v-note">미기록은 증상 없음이나 섭취량 0을 뜻하지 않아요. 인바디 측정 횟수는 일지 기록일과 별도로 집계합니다.</p></section><section><h3>진료에서 물어볼 것</h3>'+questionHTML+(s.context.question?'<h4>계속 확인할 질문 · 현재 공통 메모</h4><p>'+esc(s.context.question)+'</p>':'')+'</section><section><h3>체성분 변화</h3><p>기간 내 측정 '+m.count+'회 · 최근 측정: '+stamp(m.latest)+'</p><p>비교 측정: '+stamp(m.baseline)+(m.method==='before-period'?' · 기간 시작 전 마지막 같은 장비 측정':m.method==='first-in-period'?' · 기간 안의 첫 같은 장비 측정':'')+'</p><div class="table-wrap"><table><thead><tr><th>항목</th><th>비교 측정</th><th>최근 측정</th><th>차이</th></tr></thead><tbody>'+m.metrics.map(x=>'<tr><th scope="row">'+x.label+' ('+x.unit+')</th><td>'+val(x.baseline)+(x.baselineDerived?' (계산)':'')+'</td><td>'+val(x.latest)+(x.latestDerived?' (계산)':'')+'</td><td>'+(finite(x.delta)?(x.delta>0?'+':'')+val(x.delta,x.key==='pbf'?'%p':x.unit):'비교 불가')+'</td></tr>').join('')+'</tbody></table></div><p class="v-note">장비명이 같은 측정끼리 비교했어요. 측정 조건은 다를 수 있고, 변화의 원인이나 좋고 나쁨을 판단하지 않습니다. %의 차이는 퍼센트포인트입니다.</p></section><section><h3>반복해서 남긴 증상</h3><p>상세 증상 입력 또는 ‘증상 없음’ 확인 '+s.assessedDays+'일 / 일지 기록 '+s.recordedDays+'일. ‘증상 없음’ 직접 체크 '+s.symptomFreeDays+'일.</p>'+(s.conflictDays?'<p class="v-attention">증상 없음과 증상 기록이 함께 있는 '+s.conflictDays+'일이 있어요. 날짜별 기록을 확인하세요.</p>':'')+(s.symptoms.length?'<div class="table-wrap"><table><thead><tr><th>증상</th><th>기록 횟수</th><th>기록 날짜 수</th><th>최대 강도</th></tr></thead><tbody>'+s.symptoms.map(x=>'<tr><th scope="row">'+esc(x.name)+'<small>'+x.dates.map(esc).join(', ')+'</small></th><td>'+x.events+'건</td><td>'+x.days+'일</td><td>'+val(x.maxSeverity)+' /10</td></tr>').join('')+'</tbody></table></div>':'<p>강도 0을 제외한 상세 증상 기록이 없어요. 증상이 없었다는 판정은 아닙니다.</p>')+'<p class="v-note">같은 날 여러 번 남긴 증상은 횟수에 각각 포함해요. 강도 미입력 기록은 횟수에 포함하고, 강도 0은 제외합니다. 아래 하루 체크는 별도로 표시해 중복 합산하지 않아요.</p>'+symptomDetails(s,!!options.expandDetails)+'</section><section><h3>먹고 마신 기록</h3><p>식사 '+s.intake.mealCount+'건 / '+s.intake.mealDays+'일 · 수분 입력 '+s.intake.waterDays+'일 · 수분 기록일 평균 '+val(s.intake.waterAverage,'ml')+'</p><div class="table-wrap"><table><thead><tr><th>영양소</th><th>기록한 값 합계</th><th>값이 있는 식사</th><th>음식별 누락 없는 식사</th></tr></thead><tbody>'+[['kcal','열량','kcal'],['carbG','탄수화물','g'],['proteinG','단백질','g'],['fatG','지방','g']].map(([key,label,unit])=>{const n=s.intake.nutrients[key];return '<tr><th scope="row">'+label+'</th><td>'+val(n.total,unit)+'</td><td>'+n.knownMeals+' / '+s.intake.mealCount+'건</td><td>'+n.completeMeals+' / '+s.intake.mealCount+'건</td></tr>';}).join('')+'</tbody></table></div><p class="v-note">일반 식품 추정값과 직접 입력값을 포함합니다. 부분 기록의 합계이며 실제 하루 전체 섭취량·영양 충족 여부로 해석하지 않아요. 수분은 수분 입력만 합산합니다.</p></section><section><h3>활동 기록</h3><p>근력운동 '+s.activity.strengthSessions+'회 / '+s.activity.strengthDays+'일 · 러닝·걷기 '+s.activity.runSessions+'회 · 입력한 달리기 거리 '+val(s.activity.runDistance,'km')+'</p><p class="v-note">계획한 운동은 포함하지 않았어요.</p></section><section><h3>현재 저장된 공통 진료 메모</h3><p class="v-note">기간과 무관한 현재 메모입니다. 과거 시점의 상태를 뜻하지 않아요.</p>'+[['surgery','수술·회복'],['medicine','복약·보충'],['followup','검사·상담']].map(([key,label])=>'<h4>'+label+'</h4><p>'+esc(s.context[key]||'미입력')+'</p>').join('')+'</section><section><h3>날짜별 하루 체크·메모</h3>'+s.days.filter(d=>d.notes||Object.entries(d.review||{}).some(([key,v])=>!['completed','symptomFree'].includes(key)&&v!==null&&v!==''&&v!==false)).map(d=>{const q=d.review||{},numbers=[['appetite','식사 어려움','/10'],['fatigue','피로','/10'],['pain','통증','/10'],['mouthSores','입안 통증','/10'],['neuropathy','손발 저림','/10'],['temperatureC','최고 체온','°C'],['stools','배변','회'],['bristol','변 형태',''],['vomits','구토','회'],['sleepHours','수면','시간']].filter(([key])=>finite(q[key])).map(([key,label,unit])=>label+' '+val(q[key],unit));return '<div class="v-day-note"><h4>'+esc(d.date)+'</h4>'+(numbers.length?'<p>'+esc(numbers.join(' · '))+'</p>':'')+(q.chemoStatus?'<p>이 날짜에 입력한 항암 상태: '+esc({current:'치료 중',completed:'치료 후 경과 관찰',none:'해당 없음'}[q.chemoStatus]||'미입력')+(q.chemoDate?' · 최근 치료일 '+esc(q.chemoDate):'')+(q.chemoName?' · '+esc(q.chemoName):'')+'</p>':'')+(q.medicationNote?'<p><strong>복약·보충·검사</strong> '+esc(q.medicationNote)+'</p>':'')+(d.notes?'<p>'+esc(d.notes)+'</p>':'')+'</div>';}).join('')+'<p class="v-note">질문은 위쪽에 모았어요. 이 요약은 진단이나 부작용 등급을 대신하지 않습니다.</p></section>';}
+ function documentHTML(s,options={}){return '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src \'none\';style-src \'unsafe-inline\'"><title>위로그 진료 전 요약 '+s.range.from+'–'+s.range.through+'</title><style>body{max-width:940px;margin:32px auto;padding:0 24px;font:14px/1.7 "Malgun Gothic",sans-serif;color:#1c2f50}h2{font-size:25px}h3{font-size:18px;margin:24px 0 10px}h4{font-size:14px;margin:16px 0 6px}p{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}section{border-top:1px solid #dce4ef;padding:8px 0 18px}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border-bottom:1px solid #dce4ef;text-align:left;padding:9px;font-size:13px}th{font-weight:600}thead{background:#f4f7fc}.v-note,small{color:#5a6980;font-size:12px}li{margin:10px 0;overflow-wrap:anywhere;white-space:pre-wrap}li small,th small{display:block}th small{font-weight:400}.v-symptom-details{margin-top:16px}.v-symptom-details>summary{cursor:pointer;font-weight:600}.v-symptom-row{padding:12px 0;border-bottom:1px solid #e0e7f1}.v-attention{background:#fff9e6;padding:12px}.v-kicker{color:#2e5aa7}.v-day-note{margin:16px 0}@media print{body{padding:0;margin:0;font-size:11px}h2,h3,h4{break-after:avoid}tr{break-inside:avoid}thead{display:table-header-group}}@media(max-width:600px){body{padding:0 14px}.table-wrap{overflow:auto}table{min-width:460px}}</style></head><body>'+html(s,{...options,expandDetails:true})+'</body></html>';}
+ return Object.freeze({validateRange,measurementChange,summary,html,documentHTML});
+});
+
+// Private, on-device report preview. The exported report contains no scripts or network access.
+const WV=window.WeelogVisit;
+let vIdentity=null,vMode='',vFormDirty=false,vOpened=false,vPreviewSummary=null;
+const vSection=document.createElement('section');vSection.id='v-visit-section';vSection.className='v-visit-section';
+vSection.innerHTML=`<details id="v-visit-details"><summary><span>진료 전 요약</span><small>지난 진료 이후의 변화와 질문 모아 보기</small></summary><div id="v-access" class="v-access"></div><form id="v-range-form"><fieldset id="v-range-fields"><div class="v-range-grid"><div><label for="v-range-mode">요약 기간</label><select id="v-range-mode"><option value="range">기간 직접 선택</option><option value="since">지난 진료 다음 날부터</option></select></div><div id="v-last-wrap" hidden><label for="v-last">지난 진료일</label><input id="v-last" type="date"></div><div id="v-from-wrap"><label for="v-from">시작 날짜 · 포함</label><input id="v-from" type="date"></div><div><label for="v-through">마지막 날짜 · 포함</label><input id="v-through" type="date" required></div></div><div class="v-actions"><button type="submit" class="primary">요약 미리보기</button><button type="button" id="v-save-range">이 기간 저장</button><button type="button" id="v-use-month">선택한 달로 맞추기</button></div><p id="v-range-note" class="v-note"></p><p id="v-error" class="error" role="alert"></p><p id="v-status" class="v-note" role="status"></p></fieldset></form><div id="v-preview-tools" class="v-preview-tools" hidden><p>저장한 기록만 표시합니다. 아래 내용을 확인한 뒤 내려받으세요.</p><button type="button" id="v-download">진료 요약 HTML 다운로드</button></div><article id="v-preview" class="v-document" aria-label="진료 전 요약 미리보기" tabindex="-1" hidden></article></details>`;
+$('panel-calendar').querySelector('.journal-heading').insertAdjacentElement('afterend',vSection);
+function vReadRange(){return {mode:$('v-range-mode').value,lastVisit:$('v-last').value,from:$('v-from').value,through:$('v-through').value};}
+function vMonthRange(){const today=jToday(),month=jMonth<=today.slice(0,7)?jMonth:today.slice(0,7),[y,m]=month.split('-').map(Number),last=new Date(Date.UTC(y,m,0)).toISOString().slice(0,10);return {mode:'range',lastVisit:'',from:month+'-01',through:last<today?last:today};}
+function vFillRange(raw){const def=vMonthRange(),s=raw&&typeof raw==='object'?raw:def;$('v-range-mode').value=s.mode==='since'?'since':'range';$('v-last').value=JC.validDate(s.lastVisit)?s.lastVisit:'';$('v-from').value=JC.validDate(s.from)?s.from:def.from;$('v-through').value=JC.validDate(s.through)?s.through:def.through;vRangeVisibility();}
+function vRangeVisibility(){const since=$('v-range-mode').value==='since';$('v-last-wrap').hidden=!since;$('v-from-wrap').hidden=since;$('v-last').required=since;$('v-from').required=!since;$('v-last').disabled=!since;$('v-from').disabled=since;for(const id of ['v-last','v-from','v-through'])$(id).max=jToday();$('v-range-note').textContent=since?'지난 진료일은 집계에서 제외하고 다음 날부터 마지막 날짜까지 포함해요.':'시작 날짜와 마지막 날짜를 모두 포함해요. 진료일을 모르면 기간을 직접 선택하세요.';}
+function vClearPreview(){vPreviewSummary=null;$('v-preview').replaceChildren();$('v-preview').hidden=true;$('v-preview-tools').hidden=true;}
+function vMakePreview(focus=false){$('v-error').textContent='';if(mode!=='private'){vClearPreview();return false;}try{const s=WV.summary(jData(),state().measurements,privateState.context,vReadRange(),jToday());vPreviewSummary=s;$('v-preview').innerHTML=WV.html(s,{surgeryDate:SURGERY_DATE});$('v-preview').hidden=false;$('v-preview-tools').hidden=false;vOpened=true;if(focus){$('v-preview').focus({preventScroll:true});$('v-preview').scrollIntoView({block:'start',behavior:'auto'});}return true;}catch(err){vClearPreview();$('v-error').textContent=err.message;return false;}}
+function vRender(){const changed=vIdentity!==privateState||vMode!==mode;if(changed){vIdentity=privateState;vMode=mode;vFormDirty=false;vOpened=false;vFillRange(mode==='private'?jData().profile?.visitSummary:null);vClearPreview();$('v-error').textContent='';$('v-status').textContent='';}const locked=mode!=='private';$('v-range-fields').disabled=locked||jBusy;$('v-access').innerHTML=locked?'<p>개인 기록을 열면 저장한 식사·증상·진료 메모를 모아볼 수 있어요.</p><button type="button" data-j-unlock>내 기록 열기</button>':'';if(locked){vClearPreview();return;}if(!vFormDirty&&!vOpened&&jData().profile?.visitSummary)vFillRange(jData().profile.visitSummary);if(vOpened)vMakePreview();}
+$('v-range-form').addEventListener('input',()=>{vFormDirty=true;vOpened=false;vClearPreview();$('v-status').textContent='기간을 바꿨어요. 미리보기를 다시 눌러 주세요.';});
+$('v-range-mode').addEventListener('change',()=>{vFormDirty=true;vOpened=false;vRangeVisibility();vClearPreview();});
+$('v-range-form').addEventListener('submit',e=>{e.preventDefault();vMakePreview(true);});
+$('v-save-range').addEventListener('click',async()=>{if(mode!=='private'||jBusy)return;try{const s=WV.validateRange(vReadRange(),jToday());$('v-error').textContent='';const ok=await jCommit(j=>{j.profile=j.profile||{};j.profile.visitSummary={mode:s.mode,lastVisit:s.lastVisit,from:s.from,through:s.through};},'진료 요약 기간을 저장했어요');if(ok){vFormDirty=false;$('v-status').textContent='이 기간을 암호화 저장했어요. 다음 진료 전에는 마지막 날짜를 확인하세요.';}else $('v-error').textContent=$('j-error').textContent||'기간을 저장하지 못했어요.';}catch(err){$('v-error').textContent=err.message;}});
+$('v-use-month').addEventListener('click',()=>{vFillRange(vMonthRange());vFormDirty=true;vOpened=false;vClearPreview();$('v-status').textContent='캘린더에서 선택한 달로 맞췄어요. 미리보기로 내용을 확인하세요.';});
+$('v-download').addEventListener('click',()=>{if(mode!=='private'||!vPreviewSummary||jBusy)return;if(!vMakePreview())return;const s=vPreviewSummary;download('위로그-진료전요약-'+s.range.from+'_'+s.range.through+'.html',WV.documentHTML(s,{surgeryDate:SURGERY_DATE}),'text/html;charset=utf-8');$('v-status').textContent='진료 요약을 내려받았어요. 개인 건강 기록이 담긴 파일입니다.';});
+$('j-report').textContent='진료 전 요약';
+$('j-report').addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();$('v-visit-details').open=true;vRender();if(mode==='private')vMakePreview();$('v-visit-section').scrollIntoView({block:'start',behavior:'auto'});$('v-range-mode').focus({preventScroll:true});},true);
+const vOldJournalRender=jRender;jRender=function(){vOldJournalRender();vRender();};
+const vOldValidate=validateState;validateState=function(s){const result=vOldValidate(s),saved=result.journal?.profile?.visitSummary;if(saved!==undefined)WV.validateRange(saved,'9999-12-31');return result;};
+vFillRange(vMonthRange());
+
+// Form-specific layouts. Move existing controls so storage and event handlers stay intact.
+document.body.classList.add('r-layout');
+function rSection(id,label){const e=document.createElement('section');e.id=id;e.className='r-plan-view';e.setAttribute('aria-label',label);return e;}
+const rPlan=$('panel-plan'),rPlanGroups=[['goals','목표·신체'],['meals','식사 시간표'],['workouts','운동 계획'],['guide','식사 가이드']];
+const rPlanNav=document.createElement('nav');rPlanNav.className='r-local-nav';rPlanNav.setAttribute('aria-label','목표·식사 항목');rPlanNav.innerHTML=rPlanGroups.map(([id,label])=>`<button type="button" data-r-plan="${id}" aria-controls="r-plan-${id}" aria-pressed="${id==='goals'}">${label}</button>`).join('');
+$('n-plan-gate').insertAdjacentElement('afterend',rPlanNav);
+for(const[id,label]of rPlanGroups)rPlan.append(rSection('r-plan-'+id,label));
+const rGoalCard=$('goals-form').closest('article'),rProfileCard=$('n-profile-form').closest('article'),rMealCard=$('j-plan-form').closest('article'),rWorkoutCard=$('n-workout-form').closest('article');
+$('r-plan-goals').append(rGoalCard,rProfileCard);$('r-plan-meals').append(rMealCard);$('r-plan-workouts').append(rWorkoutCard);
+for(const article of [...rPlan.querySelectorAll('article')])if(!article.closest('.r-plan-view'))$('r-plan-guide').append(article);
+for(const grid of [...rPlan.querySelectorAll(':scope > .grid-two')])if(!grid.children.length)grid.remove();
+const rIntro=rPlan.querySelector(':scope > .section-intro');if(rIntro)rIntro.textContent='목표와 계획을 설정하고, 실제 먹고 움직인 내용은 하루 기록에 남기세요.';
+function rChoosePlan(key){for(const[id]of rPlanGroups){$('r-plan-'+id).hidden=id!==key;document.querySelector(`[data-r-plan="${id}"]`).setAttribute('aria-pressed',String(id===key));}}
+rChoosePlan('goals');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-r-plan]');if(b)rChoosePlan(b.dataset.rPlan);});
+document.addEventListener('click',e=>{const b=e.target.closest('#j-mealplan-shortcuts [data-panel="plan"]');if(b)rChoosePlan('meals');});
+
+// A full-width chart and separate compact comparisons, followed by a readable ledger.
+const rOverview=$('panel-overview'),rChart=$('body-chart').closest('article'),rBefore=$('intake-summary').closest('article'),rPrevious=$('training-chart').closest('article'),rRecent=$('recent-records').closest('article');
+const rCompare=document.createElement('div');rCompare.className='r-comparisons';rCompare.append(rBefore,rPrevious);
+const rMainGrid=rOverview.querySelector('.grid-main'),rLower=rOverview.querySelector('.lower-grid');rMainGrid.before(rChart,rCompare,rRecent);rMainGrid.remove();rLower.remove();rChart.classList.add('r-chart-section');rRecent.classList.add('r-ledger');
+
+// Full list comes first; direct input and CSV are secondary tasks with an explicit toolbar.
+const rRecordPanel=$('panel-records'),rMeasure=$('measure-form').closest('article'),rImport=rRecordPanel.querySelector('.csv-intake');
+const rRecordTools=document.createElement('details');rRecordTools.id='r-record-tools';rRecordTools.className='r-record-tools';rRecordTools.innerHTML='<summary>측정 추가 · 직접 입력 / CSV</summary><div class="r-record-inputs"></div>';
+rRecordTools.querySelector('div').append(rMeasure,rImport);rRecordPanel.append(rRecordTools);
+for(const g of [...rRecordPanel.querySelectorAll(':scope > .grid-two')])if([...g.children].every(e=>e.hidden))g.hidden=true;
+const rOldEdit=editRecord;editRecord=function(kind,key){if(kind==='measure')rRecordTools.open=true;return rOldEdit(kind,key);};
+document.addEventListener('click',e=>{if(e.target.closest('[data-start-records],[data-csv-open]'))rRecordTools.open=true;},true);
+
+// Preserve compact summaries when a plan editor rerenders.
+function rFoldPlans(markup,kind){const t=document.createElement('template');t.innerHTML=markup;const selector=kind==='meal'?'.n-plan-slot':'.n-workout-row';for(const[rowIndex,row]of [...t.content.querySelectorAll(selector)].entries()){
+ const id=(kind==='meal'?'r-slot-':'r-work-')+rowIndex,old=$(id),d=document.createElement('details');d.className='r-plan-fold';d.id=id;d.open=old?old.open:rowIndex===0;
+ const get=field=>row.querySelector(kind==='meal'?`[data-plan-field="${field}"]`:`[data-workout-field="${field}"]`);
+ const name=get('name')?.value||'이름 미입력',time=kind==='meal'?get('time')?.value||'시각 미입력':nWeekdays[Number(get('weekday')?.value)]+'요일';
+ const summary=document.createElement('summary');summary.innerHTML='<span class="r-plan-time">'+jEsc(time)+'</span><strong>'+jEsc(name)+'</strong><span class="r-edit-label">열어 편집</span>';
+ const content=document.createElement('div');content.className='r-plan-fold-body';while(row.firstChild)content.append(row.firstChild);d.append(summary,content);row.append(d);
+ }return t.innerHTML;}
+const rOldPlanHTML=nPlanHTML;nPlanHTML=function(){return rFoldPlans(rOldPlanHTML(),'meal');};
+const rOldPaintWorkouts=nPaintWorkouts;nPaintWorkouts=function(){const open=[...document.querySelectorAll('.n-workout-row details')].map(e=>e.open);rOldPaintWorkouts();$('n-workout-rows').innerHTML=rFoldPlans($('n-workout-rows').innerHTML,'workout');open.forEach((v,i)=>{if($('r-work-'+i))$('r-work-'+i).open=v;});};
+document.addEventListener('click',e=>{if(e.target.closest('#n-add-plan'))$('n-plan-slots').lastElementChild?.querySelector('details')?.setAttribute('open','');if(e.target.closest('#n-add-workout'))$('n-workout-rows').lastElementChild?.querySelector('details')?.setAttribute('open','');});
+
+// Optional text sits behind a short disclosure; primary numeric fields remain ready to use.
+function rOptionalField(id,title){const el=$(id)?.parentElement;if(!el)return;const d=document.createElement('details');d.className='r-optional full';d.innerHTML='<summary>'+title+'</summary>';el.before(d);d.append(el);}
+rOptionalField('j-meal-note','메모 추가 · 음식 내성, 남긴 양');
+rOptionalField('j-run-note','코스·불편 메모 추가');
+const rReviewFieldset=$('j-review-form').querySelector('fieldset');
+function rReviewGroup(title,names,collapsed=false){const block=document.createElement(collapsed?'details':'section');block.className='r-review-group full';block.innerHTML=collapsed?'<summary>'+title+'</summary><div class="journal-form"></div>':'<h3>'+title+'</h3><div class="journal-form"></div>';const grid=block.lastElementChild;for(const name of names){const input=$('j-review-'+name);if(input)grid.append(input.closest('.journal-form > div'));}rReviewFieldset.insertBefore(block,rReviewFieldset.querySelector('.journal-actions'));}
+rReviewGroup('오늘의 컨디션',['symptomFree','appetite','fatigue','pain','sleepHours','temperatureC']);
+rReviewGroup('배변·소화',['stools','bristol','vomits']);
+rReviewGroup('치료·복약 메모 · 해당할 때',['chemoStatus','chemoDate','chemoName','mouthSores','neuropathy','medicationNote'],true);
+rReviewGroup('다음 진료에 전할 내용',['doctorQuestions','notes']);
+const rCompleted=$('j-review-completed').closest('.journal-form > div');rReviewFieldset.querySelector('.journal-actions').before(rCompleted);
+// Keep the daily input within reach. Detailed coverage is available without another page.
+const rCheckFold=document.createElement('details');rCheckFold.id='r-check-fold';rCheckFold.className='r-check-fold';
+const rCheckSummary=document.createElement('summary');rCheckSummary.append($('d-record-check').querySelector('.d-section-head'));rCheckFold.append(rCheckSummary,$('d-check-list'),$('d-record-check').querySelector('.d-explanation'));$('d-record-check').prepend(rCheckFold);
+const rJumps=document.createElement('div');rJumps.className='r-diary-jumps';rJumps.innerHTML='<button type="button" data-r-timeline class="text-button">식사–증상 시간표 보기 ↓</button><button type="button" data-r-visit class="text-button">진료 전 요약 열기 →</button>';$('d-record-check').append(rJumps);
+document.addEventListener('click',e=>{if(e.target.closest('[data-r-timeline]')){$('d-meal-timeline').scrollIntoView({block:'start'});$('d-meal-timeline').tabIndex=-1;$('d-meal-timeline').focus({preventScroll:true});}if(e.target.closest('[data-r-visit]')){setPanel('calendar',true);$('j-report').click();}});
+// When an existing entry is loaded, show optional fields that contain saved data.
+const rOldFill=jFillForm;jFillForm=function(id,entry){rOldFill(id,entry);for(const d of $(id).querySelectorAll('details.r-optional,details.r-review-group'))if([...d.querySelectorAll('input,textarea,select')].some(e=>e.type==='checkbox'?e.checked:!!e.value))d.open=true;};
+
+// Short water entry and long food editor are independent columns; no equal-height card frames.
+$('j-water-form').closest('article').classList.add('r-water-section');$('j-meal-form').closest('article').classList.add('r-food-section');
+$('j-strength-form').closest('article').classList.add('r-strength-section');$('j-run-form').closest('article').classList.add('r-run-section');
+const rOldSetPanel=setPanel;setPanel=function(panel,focus=false){const previous=activePanel;rOldSetPanel(panel,focus);if(panel==='plan')rChoosePlan('goals');if(previous!==activePanel)window.scrollTo({top:0,behavior:'instant'});};
+// Reveal a control in a collapsed section when a shortcut or form error targets it.
+document.addEventListener('invalid',e=>{let el=e.target.parentElement;while(el){if(el.tagName==='DETAILS')el.open=true;if(el.classList.contains('r-plan-view'))rChoosePlan(el.id.replace('r-plan-',''));el=el.parentElement;}},true);
+document.addEventListener('click',e=>{const b=e.target.closest('[data-r-open-check]');if(b){setPanel('diary');jSetTab('health');$('j-review-form').scrollIntoView({block:'start'});}});
 
 render();
 </script>
